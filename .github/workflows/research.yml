@@ -2,9 +2,11 @@ name: Scheduled Forex research
 on:
   schedule:
     # Both DST offsets; the application checks Europe/Vienna and deduplicates.
-    # Morning: local 08:03, 08:18, 08:33. Afternoon: local 14:33, 14:43, 14:53.
-    - cron: '3,18,33 6,7 * * *'
-    - cron: '33,43,53 12,13 * * 1-5'
+    # Generated from lib/schedule.mjs by node scripts/export-config.mjs.
+    # BEGIN GENERATED SCHEDULE
+    - cron: '30,40,50 4,5 * * 1-5'
+    - cron: '30,40,50 11,12 * * 1-5'
+    # END GENERATED SCHEDULE
   workflow_dispatch:
     inputs:
       session:

@@ -1,6 +1,6 @@
 # Forex Brief
 
-A public, mobile-friendly Forex fundamental dashboard for USD, EUR, GBP, JPY, CHF, AUD, NZD and CAD. English reports target 08:30 Europe/Vienna daily and 14:45 on weekdays. The timezone follows Austrian daylight saving automatically. The UI is a static site; scheduled research runs securely in GitHub Actions.
+A public, mobile-friendly Forex fundamental dashboard for USD, EUR, GBP, JPY, CHF, AUD, NZD and CAD. English research runs start at 06:30 and 13:30 Europe/Vienna on weekdays. The timezone follows Austrian daylight saving automatically. These are scheduled starts, not guaranteed publication times. The UI is a static site; scheduled research runs securely in GitHub Actions.
 
 ## Current state
 
@@ -14,7 +14,9 @@ The dashboard includes an explicitly labelled synthetic preview. No live report 
 4. Under **Actions**, run **Publish Forex Brief** to deploy the dashboard.
 5. Run **Scheduled Forex research** once, with `morning`, to verify real source coverage and API access. Subsequent eligible sessions run automatically. Successful reports replace the preview and fill the archive.
 
-Scheduled starts are 08:03 and 14:33 Vienna time, with later retries. GitHub may delay or drop scheduled jobs, so target publication times are not guaranteed. The application rejects runs outside 08:00–08:59 / 14:31–14:59 and deduplicates successful session IDs. UTC triggers cover both DST offsets. Public repository schedules may disable after 60 days of inactivity. Saved report commits normally provide activity; monitor failed workflows.
+Scheduled starts are 06:30 and 13:30 Vienna time, Monday–Friday, with retry opportunities 10 and 20 minutes later. GitHub may delay or drop scheduled jobs, so publication times are not guaranteed. The application accepts scheduled runs only in 06:30–06:59 / 13:30–13:59 and deduplicates successful session IDs. It rejects the inactive UTC offset and skips weekends; UTC triggers cover both Austrian DST offsets. Explicit manual runs can run outside those windows, including weekends, but still deduplicate completed sessions. Public repository schedules may disable after 60 days of inactivity. Saved report commits normally provide activity; monitor failed workflows.
+
+`lib/schedule.mjs` is the single schedule definition. After editing it, run `node scripts/export-config.mjs` to update the public schedule in `dist/data/methodology.json` and the generated cron block in the research workflow. `npm run check` rejects drift between those files. The schedule tests check window boundaries, weekend exclusions, retries, deduplication and the actual workflow triggers across a full year, including both DST changes.
 
 ## Budget
 

@@ -364,5 +364,25 @@
     "pmi": "PMI",
     "retail_sales": "Retail / household spending",
     "risk": "Risk sentiment"
+  },
+  "schedule": {
+    "timezone": "Europe/Vienna",
+    "weekdaysOnly": true,
+    "windowMinutes": 30,
+    "retryMinutes": [
+      0,
+      10,
+      20
+    ],
+    "sessions": [
+      {
+        "id": "morning",
+        "time": "06:30"
+      },
+      {
+        "id": "afternoon",
+        "time": "13:30"
+      }
+    ]
   }
 }
