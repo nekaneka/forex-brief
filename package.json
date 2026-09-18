@@ -1,0 +1,5 @@
+{
+  "name": "forex-brief", "version": "1.0.0", "private": true, "type": "module",
+  "scripts": {"dev": "node scripts/serve.mjs", "test": "node test/core.test.mjs", "check": "node --experimental-vm-modules scripts/check.mjs", "report": "node scripts/run-report.mjs", "demo": "node scripts/demo.mjs"},
+  "engines": {"node": ">=22"}
+}

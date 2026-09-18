@@ -1,0 +1,71 @@
+name: Scheduled Forex research
+on:
+  schedule:
+    # Both DST offsets; the application checks Europe/Vienna and deduplicates.
+    # Morning: local 08:03, 08:18, 08:33. Afternoon: local 14:33, 14:43, 14:53.
+    - cron: '3,18,33 6,7 * * *'
+    - cron: '33,43,53 12,13 * * 1-5'
+  workflow_dispatch:
+    inputs:
+      session:
+        description: Report session
+        type: choice
+        options: [morning, afternoon]
+        default: morning
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: forex-publication
+  cancel-in-progress: false
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify project
+        run: npm test && npm run check
+      - name: Generate report
+        id: report
+        continue-on-error: true
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          MONTHLY_BUDGET_USD: '20'
+          REQUESTED_SESSION: ${{ inputs.session }}
+        run: |
+          if [ "$GITHUB_EVENT_NAME" = "workflow_dispatch" ]; then
+            node scripts/run-report.mjs --session "$REQUESTED_SESSION"
+          else
+            node scripts/run-report.mjs
+          fi
+      - name: Persist reports, run state and budget
+        if: always() && steps.report.outputs.attempted == 'true'
+        run: |
+          git config user.name "Forex Brief"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dist/data state
+          if ! git diff --cached --quiet; then
+            git commit -m "Update Forex Brief report state"
+            git push
+          fi
+      - uses: actions/configure-pages@v5
+        if: steps.report.outputs.attempted == 'true'
+      - uses: actions/upload-pages-artifact@v3
+        if: steps.report.outputs.attempted == 'true'
+        with:
+          path: dist
+      - name: Publish dashboard
+        id: deploy
+        if: steps.report.outputs.attempted == 'true'
+        uses: actions/deploy-pages@v4
+      - name: Surface failed research
+        if: steps.report.outcome == 'failure'
+        run: exit 1

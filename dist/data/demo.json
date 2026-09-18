@@ -1,0 +1,956 @@
+{
+  "id": "illustrative-preview",
+  "demo": true,
+  "modelVersion": "1.0.0",
+  "session": "morning",
+  "currencies": [
+    {
+      "currency": "USD",
+      "rank": 1,
+      "score": 78,
+      "bias": "Bullish",
+      "quality": "Illustrative",
+      "provisional": false,
+      "agreement": "Illustrative",
+      "verifiedFactors": 0,
+      "totalFactors": 9,
+      "factors": [
+        {
+          "id": "central_bank",
+          "label": "Central-bank guidance",
+          "points": 10,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "inflation",
+          "label": "Inflation",
+          "points": 5,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "employment",
+          "label": "Employment",
+          "points": 5,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "unemployment",
+          "label": "Unemployment",
+          "points": 5,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "gdp",
+          "label": "GDP",
+          "points": 0,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "pmi",
+          "label": "PMI",
+          "points": 3,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "retail_sales",
+          "label": "Retail / household spending",
+          "points": 0,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "risk",
+          "label": "Risk sentiment",
+          "points": 0,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        }
+      ]
+    },
+    {
+      "currency": "CHF",
+      "rank": 2,
+      "score": 68,
+      "bias": "Slightly Bullish",
+      "quality": "Illustrative",
+      "provisional": false,
+      "agreement": "Illustrative",
+      "verifiedFactors": 0,
+      "totalFactors": 9,
+      "factors": [
+        {
+          "id": "central_bank",
+          "label": "Central-bank guidance",
+          "points": 10,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "inflation",
+          "label": "Inflation",
+          "points": 0,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "employment",
+          "label": "Employment",
+          "points": 0,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "unemployment",
+          "label": "Unemployment",
+          "points": 5,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "gdp",
+          "label": "GDP",
+          "points": 0,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "pmi",
+          "label": "PMI",
+          "points": 3,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "retail_sales",
+          "label": "Retail / household spending",
+          "points": 0,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "risk",
+          "label": "Risk sentiment",
+          "points": 0,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        }
+      ]
+    },
+    {
+      "currency": "GBP",
+      "rank": 3,
+      "score": 60,
+      "bias": "Slightly Bullish",
+      "quality": "Illustrative",
+      "provisional": false,
+      "agreement": "Illustrative",
+      "verifiedFactors": 0,
+      "totalFactors": 9,
+      "factors": [
+        {
+          "id": "central_bank",
+          "label": "Central-bank guidance",
+          "points": 0,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "inflation",
+          "label": "Inflation",
+          "points": 5,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "employment",
+          "label": "Employment",
+          "points": 5,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "unemployment",
+          "label": "Unemployment",
+          "points": 0,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "gdp",
+          "label": "GDP",
+          "points": 0,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "pmi",
+          "label": "PMI",
+          "points": 0,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "retail_sales",
+          "label": "Retail / household spending",
+          "points": 0,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "risk",
+          "label": "Risk sentiment",
+          "points": 0,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        }
+      ]
+    },
+    {
+      "currency": "EUR",
+      "rank": 4,
+      "score": 53,
+      "bias": "Neutral",
+      "quality": "Illustrative",
+      "provisional": false,
+      "agreement": "Illustrative",
+      "verifiedFactors": 0,
+      "totalFactors": 9,
+      "factors": [
+        {
+          "id": "central_bank",
+          "label": "Central-bank guidance",
+          "points": 0,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "inflation",
+          "label": "Inflation",
+          "points": 0,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "employment",
+          "label": "Employment",
+          "points": 0,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "unemployment",
+          "label": "Unemployment",
+          "points": 0,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "gdp",
+          "label": "GDP",
+          "points": 0,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "pmi",
+          "label": "PMI",
+          "points": 3,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "retail_sales",
+          "label": "Retail / household spending",
+          "points": 0,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "risk",
+          "label": "Risk sentiment",
+          "points": 0,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        }
+      ]
+    },
+    {
+      "currency": "JPY",
+      "rank": 5,
+      "score": 45,
+      "bias": "Neutral",
+      "quality": "Illustrative",
+      "provisional": false,
+      "agreement": "Illustrative",
+      "verifiedFactors": 0,
+      "totalFactors": 9,
+      "factors": [
+        {
+          "id": "central_bank",
+          "label": "Central-bank guidance",
+          "points": -10,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "inflation",
+          "label": "Inflation",
+          "points": 0,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "employment",
+          "label": "Employment",
+          "points": 0,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "unemployment",
+          "label": "Unemployment",
+          "points": 5,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "gdp",
+          "label": "GDP",
+          "points": 0,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "pmi",
+          "label": "PMI",
+          "points": 0,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "retail_sales",
+          "label": "Retail / household spending",
+          "points": 0,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "risk",
+          "label": "Risk sentiment",
+          "points": 0,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        }
+      ]
+    },
+    {
+      "currency": "CAD",
+      "rank": 6,
+      "score": 40,
+      "bias": "Neutral",
+      "quality": "Illustrative",
+      "provisional": false,
+      "agreement": "Illustrative",
+      "verifiedFactors": 0,
+      "totalFactors": 9,
+      "factors": [
+        {
+          "id": "central_bank",
+          "label": "Central-bank guidance",
+          "points": -10,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "inflation",
+          "label": "Inflation",
+          "points": 0,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "employment",
+          "label": "Employment",
+          "points": 0,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "unemployment",
+          "label": "Unemployment",
+          "points": 0,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "gdp",
+          "label": "GDP",
+          "points": 0,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "pmi",
+          "label": "PMI",
+          "points": 0,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "retail_sales",
+          "label": "Retail / household spending",
+          "points": 0,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "risk",
+          "label": "Risk sentiment",
+          "points": 0,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        }
+      ]
+    },
+    {
+      "currency": "AUD",
+      "rank": 7,
+      "score": 33,
+      "bias": "Slightly Bearish",
+      "quality": "Illustrative",
+      "provisional": false,
+      "agreement": "Illustrative",
+      "verifiedFactors": 0,
+      "totalFactors": 9,
+      "factors": [
+        {
+          "id": "central_bank",
+          "label": "Central-bank guidance",
+          "points": -10,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "inflation",
+          "label": "Inflation",
+          "points": -5,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "employment",
+          "label": "Employment",
+          "points": 0,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "unemployment",
+          "label": "Unemployment",
+          "points": 0,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "gdp",
+          "label": "GDP",
+          "points": 0,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "pmi",
+          "label": "PMI",
+          "points": 3,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "retail_sales",
+          "label": "Retail / household spending",
+          "points": -5,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "risk",
+          "label": "Risk sentiment",
+          "points": 0,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        }
+      ]
+    },
+    {
+      "currency": "NZD",
+      "rank": 8,
+      "score": 25,
+      "bias": "Bearish",
+      "quality": "Illustrative",
+      "provisional": false,
+      "agreement": "Illustrative",
+      "verifiedFactors": 0,
+      "totalFactors": 9,
+      "factors": [
+        {
+          "id": "central_bank",
+          "label": "Central-bank guidance",
+          "points": -10,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "inflation",
+          "label": "Inflation",
+          "points": -5,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "employment",
+          "label": "Employment",
+          "points": -10,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "unemployment",
+          "label": "Unemployment",
+          "points": 0,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "gdp",
+          "label": "GDP",
+          "points": 0,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "pmi",
+          "label": "PMI",
+          "points": 0,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "retail_sales",
+          "label": "Retail / household spending",
+          "points": 0,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        },
+        {
+          "id": "risk",
+          "label": "Risk sentiment",
+          "points": 0,
+          "reason": "Synthetic example only. This is not a claim about an economic release or current market conditions.",
+          "evidenceIds": [],
+          "eligible": false
+        }
+      ]
+    }
+  ],
+  "pairs": [
+    {
+      "pair": "NZDUSD",
+      "base": "NZD",
+      "quote": "USD",
+      "difference": -53,
+      "edge": 53,
+      "edgeClass": "Strong Edge",
+      "direction": "SHORT",
+      "eligible": true,
+      "quality": "High"
+    },
+    {
+      "pair": "AUDUSD",
+      "base": "AUD",
+      "quote": "USD",
+      "difference": -45,
+      "edge": 45,
+      "edgeClass": "Strong Edge",
+      "direction": "SHORT",
+      "eligible": true,
+      "quality": "High"
+    },
+    {
+      "pair": "NZDCHF",
+      "base": "NZD",
+      "quote": "CHF",
+      "difference": -43,
+      "edge": 43,
+      "edgeClass": "Strong Edge",
+      "direction": "SHORT",
+      "eligible": true,
+      "quality": "High"
+    },
+    {
+      "pair": "USDCAD",
+      "base": "USD",
+      "quote": "CAD",
+      "difference": 38,
+      "edge": 38,
+      "edgeClass": "Tradable Edge",
+      "direction": "LONG",
+      "eligible": true,
+      "quality": "High"
+    },
+    {
+      "pair": "AUDCHF",
+      "base": "AUD",
+      "quote": "CHF",
+      "difference": -35,
+      "edge": 35,
+      "edgeClass": "Tradable Edge",
+      "direction": "SHORT",
+      "eligible": true,
+      "quality": "High"
+    },
+    {
+      "pair": "GBPNZD",
+      "base": "GBP",
+      "quote": "NZD",
+      "difference": 35,
+      "edge": 35,
+      "edgeClass": "Tradable Edge",
+      "direction": "LONG",
+      "eligible": true,
+      "quality": "High"
+    },
+    {
+      "pair": "USDJPY",
+      "base": "USD",
+      "quote": "JPY",
+      "difference": 33,
+      "edge": 33,
+      "edgeClass": "Tradable Edge",
+      "direction": "LONG",
+      "eligible": true,
+      "quality": "High"
+    },
+    {
+      "pair": "CADCHF",
+      "base": "CAD",
+      "quote": "CHF",
+      "difference": -28,
+      "edge": 28,
+      "edgeClass": "Tradable Edge",
+      "direction": "SHORT",
+      "eligible": true,
+      "quality": "High"
+    },
+    {
+      "pair": "EURNZD",
+      "base": "EUR",
+      "quote": "NZD",
+      "difference": 28,
+      "edge": 28,
+      "edgeClass": "Tradable Edge",
+      "direction": "LONG",
+      "eligible": true,
+      "quality": "High"
+    },
+    {
+      "pair": "GBPAUD",
+      "base": "GBP",
+      "quote": "AUD",
+      "difference": 27,
+      "edge": 27,
+      "edgeClass": "Tradable Edge",
+      "direction": "LONG",
+      "eligible": true,
+      "quality": "High"
+    },
+    {
+      "pair": "EURUSD",
+      "base": "EUR",
+      "quote": "USD",
+      "difference": -25,
+      "edge": 25,
+      "edgeClass": "Tradable Edge",
+      "direction": "SHORT",
+      "eligible": true,
+      "quality": "High"
+    },
+    {
+      "pair": "CHFJPY",
+      "base": "CHF",
+      "quote": "JPY",
+      "difference": 23,
+      "edge": 23,
+      "edgeClass": "Tradable Edge",
+      "direction": "LONG",
+      "eligible": true,
+      "quality": "High"
+    },
+    {
+      "pair": "EURAUD",
+      "base": "EUR",
+      "quote": "AUD",
+      "difference": 20,
+      "edge": 20,
+      "edgeClass": "Weak Edge",
+      "direction": "LONG",
+      "eligible": true,
+      "quality": "High"
+    },
+    {
+      "pair": "GBPCAD",
+      "base": "GBP",
+      "quote": "CAD",
+      "difference": 20,
+      "edge": 20,
+      "edgeClass": "Weak Edge",
+      "direction": "LONG",
+      "eligible": true,
+      "quality": "High"
+    },
+    {
+      "pair": "NZDJPY",
+      "base": "NZD",
+      "quote": "JPY",
+      "difference": -20,
+      "edge": 20,
+      "edgeClass": "Weak Edge",
+      "direction": "SHORT",
+      "eligible": true,
+      "quality": "High"
+    },
+    {
+      "pair": "GBPUSD",
+      "base": "GBP",
+      "quote": "USD",
+      "difference": -18,
+      "edge": 18,
+      "edgeClass": "Weak Edge",
+      "direction": "SHORT",
+      "eligible": true,
+      "quality": "High"
+    },
+    {
+      "pair": "EURCHF",
+      "base": "EUR",
+      "quote": "CHF",
+      "difference": -15,
+      "edge": 15,
+      "edgeClass": "Weak Edge",
+      "direction": "SHORT",
+      "eligible": true,
+      "quality": "High"
+    },
+    {
+      "pair": "GBPJPY",
+      "base": "GBP",
+      "quote": "JPY",
+      "difference": 15,
+      "edge": 15,
+      "edgeClass": "Weak Edge",
+      "direction": "LONG",
+      "eligible": true,
+      "quality": "High"
+    },
+    {
+      "pair": "NZDCAD",
+      "base": "NZD",
+      "quote": "CAD",
+      "difference": -15,
+      "edge": 15,
+      "edgeClass": "Weak Edge",
+      "direction": "SHORT",
+      "eligible": true,
+      "quality": "High"
+    },
+    {
+      "pair": "EURCAD",
+      "base": "EUR",
+      "quote": "CAD",
+      "difference": 13,
+      "edge": 13,
+      "edgeClass": "Weak Edge",
+      "direction": "LONG",
+      "eligible": true,
+      "quality": "High"
+    },
+    {
+      "pair": "AUDJPY",
+      "base": "AUD",
+      "quote": "JPY",
+      "difference": -12,
+      "edge": 12,
+      "edgeClass": "Weak Edge",
+      "direction": "SHORT",
+      "eligible": true,
+      "quality": "High"
+    },
+    {
+      "pair": "USDCHF",
+      "base": "USD",
+      "quote": "CHF",
+      "difference": 10,
+      "edge": 10,
+      "edgeClass": "No Edge",
+      "direction": "NEUTRAL",
+      "eligible": true,
+      "quality": "High"
+    },
+    {
+      "pair": "AUDNZD",
+      "base": "AUD",
+      "quote": "NZD",
+      "difference": 8,
+      "edge": 8,
+      "edgeClass": "No Edge",
+      "direction": "NEUTRAL",
+      "eligible": true,
+      "quality": "High"
+    },
+    {
+      "pair": "EURJPY",
+      "base": "EUR",
+      "quote": "JPY",
+      "difference": 8,
+      "edge": 8,
+      "edgeClass": "No Edge",
+      "direction": "NEUTRAL",
+      "eligible": true,
+      "quality": "High"
+    },
+    {
+      "pair": "GBPCHF",
+      "base": "GBP",
+      "quote": "CHF",
+      "difference": -8,
+      "edge": 8,
+      "edgeClass": "No Edge",
+      "direction": "NEUTRAL",
+      "eligible": true,
+      "quality": "High"
+    },
+    {
+      "pair": "AUDCAD",
+      "base": "AUD",
+      "quote": "CAD",
+      "difference": -7,
+      "edge": 7,
+      "edgeClass": "No Edge",
+      "direction": "NEUTRAL",
+      "eligible": true,
+      "quality": "High"
+    },
+    {
+      "pair": "EURGBP",
+      "base": "EUR",
+      "quote": "GBP",
+      "difference": -7,
+      "edge": 7,
+      "edgeClass": "No Edge",
+      "direction": "NEUTRAL",
+      "eligible": true,
+      "quality": "High"
+    },
+    {
+      "pair": "CADJPY",
+      "base": "CAD",
+      "quote": "JPY",
+      "difference": -5,
+      "edge": 5,
+      "edgeClass": "No Edge",
+      "direction": "NEUTRAL",
+      "eligible": true,
+      "quality": "High"
+    }
+  ],
+  "focus": {
+    "pair": "GBPUSD",
+    "base": "GBP",
+    "quote": "USD",
+    "difference": -18,
+    "edge": 18,
+    "edgeClass": "Weak Edge",
+    "direction": "SHORT",
+    "eligible": true,
+    "quality": "High"
+  },
+  "summary": [
+    "USD leads this illustrative ranking at 78/100. These are synthetic example scores.",
+    "NZD and AUD sit at the weaker end of the example spectrum.",
+    "USD versus NZD has the largest example separation: 53 points.",
+    "GBPUSD shows a bearish example bias, with an 18-point difference.",
+    "Live event risks and source evidence appear after the first verified research run."
+  ],
+  "events": [],
+  "evidence": [],
+  "calendarChecks": [],
+  "limitations": []
+}
