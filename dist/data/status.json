@@ -1,1 +1,8 @@
-{"status":"not_configured","message":"Live reporting is awaiting an API key and scheduler activation.","lastSuccess":null}
+{
+  "attemptedAt": "2026-10-05T11:43:24.434Z",
+  "runId": "2026-10-05-afternoon",
+  "session": "afternoon",
+  "lastSuccess": null,
+  "status": "not_configured",
+  "message": "Live research is awaiting the OPENAI_API_KEY repository secret."
+}
