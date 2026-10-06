@@ -13,7 +13,7 @@ const html = await readFile("dist/index.html", "utf8");
 for (const match of html.matchAll(/(?:src|href)="([^"#]+)"/g)) {
   const value = match[1];
   if (!/^(https?:|data:|\.\/)/.test(value))
-    await access(path.join("dist", value));
+    await access(path.join("dist", value.split(/[?#]/, 1)[0]));
 }
 const config = JSON.parse(await readFile("dist/data/methodology.json", "utf8"));
 if (Object.keys(config.sources).length !== 8)
