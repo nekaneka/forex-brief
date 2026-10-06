@@ -1,8 +1,9 @@
 {
-  "attemptedAt": "2026-10-05T21:02:41.234Z",
-  "runId": "2026-10-05-morning",
+  "attemptedAt": "2026-10-06T09:17:56.030Z",
+  "runId": "2026-10-06-morning",
   "session": "morning",
-  "lastSuccess": null,
-  "status": "not_configured",
-  "message": "Live research is awaiting the OPENAI_API_KEY repository secret."
+  "status": "success",
+  "lastSuccess": "2026-10-06T09:31:32.355Z",
+  "researchMode": "subscription-cloud",
+  "message": "Cloud report published."
 }

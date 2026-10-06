@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "id": "2026-10-06-morning",
+    "generatedAt": "2026-10-06T09:31:32.355Z",
+    "cutoff": "2026-10-06T09:17:56.030Z",
+    "session": "morning",
+    "status": "verified",
+    "modelVersion": "1.0.0",
+    "scores": {
+      "GBP": 73,
+      "NZD": 73,
+      "USD": 70,
+      "EUR": 68,
+      "AUD": 68,
+      "CHF": 60,
+      "JPY": 53,
+      "CAD": 35
+    }
+  }
+]
