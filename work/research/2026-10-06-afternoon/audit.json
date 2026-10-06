@@ -1,0 +1,34 @@
+{
+  "id": "2026-10-06-afternoon",
+  "sourceRevision": "07542b36762050b13ee6ce15505bfa67771ffbe4",
+  "cutoff": "2026-10-06T09:46:46Z",
+  "generatedAt": "2026-10-06T09:49:49.954Z",
+  "verified": 69,
+  "totalEvidence": 72,
+  "warnings": [],
+  "calendarChecks": 48,
+  "events": 15,
+  "calendarCounts": {
+    "scheduled": 13,
+    "none_verified": 35,
+    "unavailable": 0
+  },
+  "actualConsultedUrls": 94,
+  "tests": {
+    "passed": 19,
+    "failed": 0
+  },
+  "checks": "npm run check passed",
+  "arithmetic": "Eight scores and 28 edges recomputed; seven sections and five summary bullets checked",
+  "limitations": [
+    "Unavailable evidence: JPY:employment, CHF:core_cpi, CHF:employment. See each source note.",
+    "18 numeric observations lack a comparable sourced consensus; prior values are not used as consensus."
+  ],
+  "freshResearch": "Source and consensus pages reconsulted this run. Review research used as a comparison baseline, not simply republished. EUR August retail updated; latest verified ECB Lane speech incorporated. Missing definitions remain unavailable.",
+  "riskObservation": "2026-10-05",
+  "errors": [
+    "New Eurostat 6 October retail URL inaccessible via browsing; matching free indicator and calendar used.",
+    "BoJ 6 October English speech URL not accessible; 1 October summary retained as newest verified official guidance."
+  ],
+  "billing": "No model APIs, keys or paid data used"
+}

@@ -1,0 +1,767 @@
+{
+  "sources": [
+    {
+      "url": "https://www.federalreserve.gov/newsevents/speech/jefferson20261001a.htm",
+      "title": "Speech by Vice Chair Jefferson on the U.S. economy and monetary policy - Federal Reserve Board",
+      "reference": "turn82view0",
+      "accessible": true
+    },
+    {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+      "title": "Federal Reserve Board - Federal Reserve issues FOMC statement",
+      "reference": "turn82view1",
+      "accessible": true
+    },
+    {
+      "url": "https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp260930_1~7c6c120482.en.html",
+      "title": "Monetary policy in a world of overlapping shocks",
+      "reference": "turn82view2",
+      "accessible": true
+    },
+    {
+      "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260910~314e508016.en.html",
+      "title": "Monetary policy decisions",
+      "reference": "turn86view0",
+      "accessible": true
+    },
+    {
+      "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
+      "title": "Bank rate maintained at 3.75% - September 2026 Monetary Policy Summary and Minutes | Bank of England – the UK's central bank",
+      "reference": "turn86view1",
+      "accessible": true
+    },
+    {
+      "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/opinion_2026/opi260918.pdf",
+      "title": "Summary of Opinions at the Monetary Policy Meeting on September 17 and 18, 2026",
+      "reference": "turn86view2",
+      "accessible": true
+    },
+    {
+      "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260918a.pdf",
+      "title": "",
+      "reference": "turn89view0",
+      "accessible": true
+    },
+    {
+      "url": "https://www.snb.ch/en/publications/communication/press-releases-restricted/pre_20260924",
+      "title": "Monetary policy assessment of 24 September 2026",
+      "reference": "turn89view1",
+      "accessible": true
+    },
+    {
+      "url": "https://www.rba.gov.au/media-releases/2026/mr-26-27.html",
+      "title": "Statement by the Monetary Policy Board: Monetary Policy Decision | Media Releases | RBA",
+      "reference": "turn89view2",
+      "accessible": true
+    },
+    {
+      "url": "https://www.rbnz.govt.nz/news-and-events/news/2026/09/ocr-increased-by-25-basis-points-to-2-75",
+      "title": "OCR increased by 25 basis points to 2.75% - Reserve Bank of New Zealand - Te Pūtea Matua",
+      "reference": "turn84view0",
+      "accessible": true
+    },
+    {
+      "url": "https://www.bankofcanada.ca/2026/09/fad-press-release-2026-09-02/",
+      "title": "Bank of Canada maintains the policy rate at 2¼% - Bank of Canada",
+      "reference": "turn84view1",
+      "accessible": true
+    },
+    {
+      "url": "https://www.bls.gov/news.release/cpi.htm",
+      "title": "Consumer Price Index News Release - 2026 M08 Results",
+      "reference": "turn84view2",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/united-states/inflation-rate-mom",
+      "title": "United States Inflation Rate MoM",
+      "reference": "turn83view0",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/united-states/core-inflation-rate-mom",
+      "title": "United States Core Inflation Rate MoM",
+      "reference": "turn83view1",
+      "accessible": true
+    },
+    {
+      "url": "https://www.bls.gov/news.release/archives/empsit_10022026.htm",
+      "title": "Employment Situation News Release - 2026 M09 Results",
+      "reference": "turn83view2",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/united-states/non-farm-payrolls",
+      "title": "United States Non Farm Payrolls",
+      "reference": "turn91view0",
+      "accessible": true
+    },
+    {
+      "url": "https://www.bea.gov/data/gdp/gross-domestic-product",
+      "title": "Gross Domestic Product | U.S. Bureau of Economic Analysis (BEA)",
+      "reference": "turn91view1",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/united-states/gdp-growth",
+      "title": "United States GDP Growth Rate",
+      "reference": "turn91view2",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/united-states/composite-pmi",
+      "title": "United States Composite PMI",
+      "reference": "turn92view0",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/united-states/calendar",
+      "title": "United States Calendar",
+      "reference": "turn92view1",
+      "accessible": true
+    },
+    {
+      "url": "https://www.census.gov/retail/sales.html",
+      "title": "Monthly Retail Trade - Sales Report",
+      "reference": "turn92view2",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/united-states/retail-sales",
+      "title": "US Retail Sales",
+      "reference": "turn98view0",
+      "accessible": true
+    },
+    {
+      "url": "https://ec.europa.eu/eurostat/en/web/products-euro-indicators/w/2-02102026-ap",
+      "title": "Euro area annual inflation up to 3.8% - Euro indicators - Eurostat",
+      "reference": "turn98view1",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/euro-area/inflation-cpi",
+      "title": "Euro Area Inflation Rate",
+      "reference": "turn98view2",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/euro-area/core-inflation-rate",
+      "title": "Euro Area Core Inflation Rate",
+      "reference": "turn94view0",
+      "accessible": true
+    },
+    {
+      "url": "https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-07092026-ap",
+      "title": "GDP up by 0.6% and employment up by 0.1% in the euro area - Euro indicators - Eurostat",
+      "reference": "turn94view1",
+      "accessible": true
+    },
+    {
+      "url": "https://ec.europa.eu/eurostat/en/web/products-euro-indicators/w/3-01102026-ap",
+      "title": "Euro area unemployment at 6.4% - Euro indicators - Eurostat",
+      "reference": "turn94view2",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/euro-area/gdp-growth",
+      "title": "Euro Area GDP Growth Rate",
+      "reference": "turn97view0",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/euro-area/composite-pmi",
+      "title": "Euro Area Composite PMI",
+      "reference": "turn97view1",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/euro-area/calendar",
+      "title": "Euro Area Calendar",
+      "reference": "turn97view2",
+      "accessible": true
+    },
+    {
+      "url": "https://ec.europa.eu/eurostat/en/web/products-euro-indicators/w/4-04092026-ap",
+      "title": "Volume of retail trade down by 0.6% in the euro area and by 0.4% in the EU - Euro indicators - Eurostat",
+      "reference": "turn88view0",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/euro-area/retail-sales",
+      "title": "Euro Area Retail Sales MoM",
+      "reference": "turn88view1",
+      "accessible": true
+    },
+    {
+      "url": "https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/august2026",
+      "title": "Consumer price inflation, UK - Office for National Statistics",
+      "reference": "turn88view2",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/united-kingdom/inflation-cpi",
+      "title": "United Kingdom Inflation Rate",
+      "reference": "turn85view0",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/united-kingdom/core-inflation-rate",
+      "title": "United Kingdom Core Inflation Rate",
+      "reference": "turn85view1",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/united-kingdom/employment-change",
+      "title": "United Kingdom Employment Change",
+      "reference": "turn85view2",
+      "accessible": true
+    },
+    {
+      "url": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/uklabourmarket/latest",
+      "title": "Labour market overview, UK - Office for National Statistics",
+      "reference": "turn95view0",
+      "accessible": true
+    },
+    {
+      "url": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/quarterlynationalaccounts/latest",
+      "title": "GDP quarterly national accounts, UK - Office for National Statistics",
+      "reference": "turn95view1",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/united-kingdom/gdp-growth",
+      "title": "United Kingdom GDP Growth Rate",
+      "reference": "turn95view2",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/united-kingdom/composite-pmi",
+      "title": "United Kingdom Composite PMI",
+      "reference": "turn87view0",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/united-kingdom/calendar",
+      "title": "United Kingdom Calendar",
+      "reference": "turn87view1",
+      "accessible": true
+    },
+    {
+      "url": "https://www.ons.gov.uk/businessindustryandtrade/retailindustry/bulletins/retailsales/august2026",
+      "title": "Retail sales, Great Britain - Office for National Statistics",
+      "reference": "turn87view2",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/united-kingdom/retail-sales",
+      "title": "United Kingdom Retail Sales MoM",
+      "reference": "turn101view0",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/japan/inflation-cpi",
+      "title": "Japan Inflation Rate",
+      "reference": "turn101view1",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/japan/core-inflation-rate",
+      "title": "Japan Core Inflation Rate",
+      "reference": "turn101view2",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/japan/unemployment-rate",
+      "title": "Japan Unemployment Rate",
+      "reference": "turn93view0",
+      "accessible": true
+    },
+    {
+      "url": "https://www.esri.cao.go.jp/en/sna/data/sokuhou/files/2026/qe262_2/pdf/gaiyou2622_e.pdf",
+      "title": "Quarterly Estimates of GDP for April - June 2026 (Second Preliminary Estimates) summary",
+      "reference": "turn93view1",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/japan/gdp-growth",
+      "title": "Japan GDP Growth Rate",
+      "reference": "turn93view2",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/japan/composite-pmi",
+      "title": "Japan Composite PMI",
+      "reference": "turn96view0",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/japan/calendar",
+      "title": "Japan Calendar",
+      "reference": "turn96view1",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/japan/retail-sales",
+      "title": "Japan Retail Sales MoM",
+      "reference": "turn96view2",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/switzerland/inflation-cpi",
+      "title": "Switzerland Inflation Rate",
+      "reference": "turn90view0",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/switzerland/unemployment-rate",
+      "title": "Switzerland Unemployment Rate",
+      "reference": "turn90view1",
+      "accessible": true
+    },
+    {
+      "url": "https://www.seco.admin.ch/en/gross-domestic-product",
+      "title": "Gross domestic product, quarterly data - SECO",
+      "reference": "turn90view2",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/switzerland/manufacturing-pmi",
+      "title": "Switzerland Manufacturing PMI",
+      "reference": "turn100view0",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/switzerland/retail-sales-annual",
+      "title": "Switzerland Retail Sales YoY",
+      "reference": "turn100view1",
+      "accessible": true
+    },
+    {
+      "url": "https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/consumer-price-index-australia/aug-2026",
+      "title": "Consumer Price Index, Australia, August 2026 | Australian Bureau of Statistics",
+      "reference": "turn100view2",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/australia/inflation-cpi",
+      "title": "Australia Inflation Rate",
+      "reference": "turn99view0",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/australia/core-inflation-rate",
+      "title": "Australia RBA Trimmed Mean CPI YoY",
+      "reference": "turn99view1",
+      "accessible": true
+    },
+    {
+      "url": "https://www.abs.gov.au/statistics/labour/employment-and-unemployment/labour-force-australia/aug-2026",
+      "title": "Labour Force, Australia, August 2026 | Australian Bureau of Statistics",
+      "reference": "turn99view2",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/australia/employment-change",
+      "title": "Australia Employment Change",
+      "reference": "turn102view0",
+      "accessible": true
+    },
+    {
+      "url": "https://www.abs.gov.au/media-centre/media-releases/australian-economy-grew-04-june-quarter",
+      "title": "Australian economy grew 0.4% in the June quarter | Australian Bureau of Statistics",
+      "reference": "turn102view1",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/australia/gdp-growth",
+      "title": "Australia GDP Growth Rate",
+      "reference": "turn102view2",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/australia/composite-pmi",
+      "title": "Australia S&P Global Composite PMI",
+      "reference": "turn104view0",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/australia/calendar",
+      "title": "Australia Calendar",
+      "reference": "turn104view1",
+      "accessible": true
+    },
+    {
+      "url": "https://www.abs.gov.au/statistics/economy/finance/monthly-household-spending-indicator/aug-2026",
+      "title": "Monthly Household Spending Indicator, August 2026 | Australian Bureau of Statistics",
+      "reference": "turn104view2",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/new-zealand/inflation-cpi",
+      "title": "New Zealand Inflation Rate",
+      "reference": "turn103view0",
+      "accessible": true
+    },
+    {
+      "url": "https://www.rbnz.govt.nz/statistics/series/economic-indicators/prices",
+      "title": "Prices (M1) - Reserve Bank of New Zealand - Te Pūtea Matua",
+      "reference": "turn103view1",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/new-zealand/employment-change",
+      "title": "New Zealand Employment Change",
+      "reference": "turn103view2",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/new-zealand/unemployment-rate",
+      "title": "New Zealand Unemployment Rate",
+      "reference": "turn106view0",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/new-zealand/gdp-growth",
+      "title": "New Zealand GDP Growth Rate",
+      "reference": "turn106view1",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/new-zealand/manufacturing-pmi",
+      "title": "New Zealand Manufacturing PMI",
+      "reference": "turn106view2",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/new-zealand/retail-sales",
+      "title": "New Zealand Retail Sales QoQ",
+      "reference": "turn109view0",
+      "accessible": true
+    },
+    {
+      "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/260914/dq260914a-eng.htm",
+      "title": "The Daily — Consumer Price Index, August 2026",
+      "reference": "turn109view1",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/canada/inflation-cpi",
+      "title": "Canada Inflation Rate",
+      "reference": "turn109view2",
+      "accessible": true
+    },
+    {
+      "url": "https://www.bankofcanada.ca/rates/price-indexes/cpi/",
+      "title": "Consumer price index - Bank of Canada",
+      "reference": "turn105view0",
+      "accessible": true
+    },
+    {
+      "url": "https://www.forexfactory.com/calendar/657-ca-trimmed-cpi-yy",
+      "title": "www.forexfactory.com",
+      "reference": "turn105view1",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/canada/employment-change",
+      "title": "Canada Employment Change",
+      "reference": "turn105view2",
+      "accessible": true
+    },
+    {
+      "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/260904/dq260904a-eng.htm",
+      "title": "The Daily — Labour Force Survey, August 2026",
+      "reference": "turn107view0",
+      "accessible": true
+    },
+    {
+      "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/260828/t003a-eng.htm",
+      "title": "Real gross domestic product by expenditure account, annualized change – Seasonally adjusted at annual rates, chained (2017) dollars",
+      "reference": "turn107view1",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/canada/gdp-growth",
+      "title": "Canada GDP Growth Rate",
+      "reference": "turn107view2",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/canada/composite-pmi",
+      "title": "Canada Composite PMI",
+      "reference": "turn108view0",
+      "accessible": true
+    },
+    {
+      "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/260924/dq260924a-eng.htm",
+      "title": "The Daily — Retail trade, July 2026",
+      "reference": "turn108view1",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/canada/retail-sales",
+      "title": "Canada Retail Sales MoM",
+      "reference": "turn108view2",
+      "accessible": true
+    },
+    {
+      "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/opinion_2026/opi260918.pdf",
+      "title": "Summary of Opinions at the Monetary Policy Meeting on September 17 and 18, 2026",
+      "reference": "turn116view0",
+      "accessible": true
+    },
+    {
+      "url": "https://www.bls.gov/news.release/archives/empsit_10022026.htm",
+      "title": "Employment Situation News Release - 2026 M09 Results",
+      "reference": "turn116view1",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/united-states/gdp-growth",
+      "title": "United States GDP Growth Rate",
+      "reference": "turn116view2",
+      "accessible": true
+    },
+    {
+      "url": "https://www.census.gov/retail/sales.html",
+      "title": "Monthly Retail Trade - Sales Report",
+      "reference": "turn121view0",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/euro-area/inflation-cpi",
+      "title": "Euro Area Inflation Rate",
+      "reference": "turn121view1",
+      "accessible": true
+    },
+    {
+      "url": "https://ec.europa.eu/eurostat/en/web/products-euro-indicators/w/3-01102026-ap",
+      "title": "Euro area unemployment at 6.4% - Euro indicators - Eurostat",
+      "reference": "turn121view2",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/euro-area/calendar",
+      "title": "Euro Area Calendar",
+      "reference": "turn118view0",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/euro-area/retail-sales",
+      "title": "Euro Area Retail Sales MoM",
+      "reference": "turn118view1",
+      "accessible": true
+    },
+    {
+      "url": "https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/august2026",
+      "title": "Consumer price inflation, UK - Office for National Statistics",
+      "reference": "turn118view2",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/united-kingdom/employment-change",
+      "title": "United Kingdom Employment Change",
+      "reference": "turn124view0",
+      "accessible": true
+    },
+    {
+      "url": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/quarterlynationalaccounts/latest",
+      "title": "GDP quarterly national accounts, UK - Office for National Statistics",
+      "reference": "turn124view1",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/united-kingdom/gdp-growth",
+      "title": "United Kingdom GDP Growth Rate",
+      "reference": "turn124view2",
+      "accessible": true
+    },
+    {
+      "url": "https://www.ons.gov.uk/businessindustryandtrade/retailindustry/bulletins/retailsales/august2026",
+      "title": "Retail sales, Great Britain - Office for National Statistics",
+      "reference": "turn123view0",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/japan/core-inflation-rate",
+      "title": "Japan Core Inflation Rate",
+      "reference": "turn123view1",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/japan/gdp-growth",
+      "title": "Japan GDP Growth Rate",
+      "reference": "turn123view2",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/japan/retail-sales",
+      "title": "Japan Retail Sales MoM",
+      "reference": "turn120view0",
+      "accessible": true
+    },
+    {
+      "url": "https://www.seco.admin.ch/en/gross-domestic-product",
+      "title": "Gross domestic product, quarterly data - SECO",
+      "reference": "turn120view1",
+      "accessible": true
+    },
+    {
+      "url": "https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/consumer-price-index-australia/aug-2026",
+      "title": "Consumer Price Index, Australia, August 2026 | Australian Bureau of Statistics",
+      "reference": "turn120view2",
+      "accessible": true
+    },
+    {
+      "url": "https://www.abs.gov.au/statistics/labour/employment-and-unemployment/labour-force-australia/aug-2026",
+      "title": "Labour Force, Australia, August 2026 | Australian Bureau of Statistics",
+      "reference": "turn117view0",
+      "accessible": true
+    },
+    {
+      "url": "https://www.abs.gov.au/statistics/economy/finance/monthly-household-spending-indicator/aug-2026",
+      "title": "Monthly Household Spending Indicator, August 2026 | Australian Bureau of Statistics",
+      "reference": "turn117view1",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/new-zealand/employment-change",
+      "title": "New Zealand Employment Change",
+      "reference": "turn117view2",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/new-zealand/manufacturing-pmi",
+      "title": "New Zealand Manufacturing PMI",
+      "reference": "turn119view0",
+      "accessible": true
+    },
+    {
+      "url": "https://www.forexfactory.com/calendar/657-ca-trimmed-cpi-yy",
+      "title": "www.forexfactory.com",
+      "reference": "turn119view1",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/canada/employment-change",
+      "title": "Canada Employment Change",
+      "reference": "turn119view2",
+      "accessible": true
+    },
+    {
+      "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/260828/t003a-eng.htm",
+      "title": "Real gross domestic product by expenditure account, annualized change – Seasonally adjusted at annual rates, chained (2017) dollars",
+      "reference": "turn122view0",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/canada/gdp-growth",
+      "title": "Canada GDP Growth Rate",
+      "reference": "turn122view1",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/canada/retail-sales",
+      "title": "Canada Retail Sales MoM",
+      "reference": "turn122view2",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/united-states/calendar",
+      "title": "United States Calendar",
+      "reference": "turn112view1",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/euro-area/calendar",
+      "title": "Euro Area Calendar",
+      "reference": "turn111view0",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/united-kingdom/calendar",
+      "title": "United Kingdom Calendar",
+      "reference": "turn111view1",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/japan/calendar",
+      "title": "Japan Calendar",
+      "reference": "turn113view0",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/switzerland/calendar",
+      "title": "Switzerland Calendar",
+      "reference": "turn113view1",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/australia/calendar",
+      "title": "Australia Calendar",
+      "reference": "turn115view0",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/new-zealand/calendar",
+      "title": "New Zealand Calendar",
+      "reference": "turn115view1",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/canada/calendar",
+      "title": "Canada Calendar",
+      "reference": "turn110view0",
+      "accessible": true
+    },
+    {
+      "url": "https://www.investing.com/indices/us-spx-500-historical-data",
+      "title": "S&P 500 Historical Data (SPX) - Investing.com",
+      "reference": "turn110view1",
+      "accessible": true
+    },
+    {
+      "url": "https://www.investing.com/indices/volatility-s-p-500-historical-data?cid=1096487",
+      "title": "CBOE Volatility Index Historical Rates (VIX) - Investing.com",
+      "reference": "turn114view0",
+      "accessible": true
+    },
+    {
+      "url": "https://tradingeconomics.com/euro-area/retail-sales",
+      "title": "Euro Area Retail Sales MoM",
+      "reference": "turn125view0",
+      "accessible": true
+    },
+    {
+      "url": "https://www.federalreserve.gov/newsevents/2026-october.htm",
+      "title": "Federal Reserve Board - Calendar: October 2026",
+      "reference": "turn125view1",
+      "accessible": true
+    },
+    {
+      "url": "https://www.rba.gov.au/schedules-events/calendar/",
+      "title": "Calendar | RBA",
+      "reference": "turn125view2",
+      "accessible": true
+    },
+    {
+      "url": "https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp261005~1d8d998ef4.en.html",
+      "title": "Diagnostic Challenges for ECB Monetary Policy",
+      "reference": "turn128view0",
+      "accessible": true
+    },
+    {
+      "url": "https://www.bankofengland.co.uk/events/upcoming-events",
+      "title": "Upcoming events - w/b 5 October 2026 and 12 October 2026 | Bank of England – the UK's central bank",
+      "reference": "turn128view2",
+      "accessible": true
+    },
+    {
+      "url": "https://www.stat.go.jp/data/roudou/sokuhou/tsuki/",
+      "title": "統計局ホームページ/労働力調査（基本集計）月次結果",
+      "reference": "turn128view3",
+      "accessible": true
+    }
+  ],
+  "note": "Actual release/calendar URLs reconsulted during this research run; search-only results excluded."
+}
