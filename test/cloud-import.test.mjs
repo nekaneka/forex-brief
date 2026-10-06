@@ -11,11 +11,11 @@ const url = 'https://www.bls.gov/news.release/cpi.htm';
 function envelope() {
   return { cutoff, session: 'afternoon', consultedSources: [url], research: {
     evidence: CURRENCIES.flatMap(currency => FACTORS.map(factor => ({ currency, factor,
-      status: 'verified', actual: 1, unit: '%', reading: '1%', consensus: null, prior: null,
+      status: 'verified', series: factor, sourceName: 'Test fixture', consensusSourceUrl: null, actual: 1, unit: '%', reading: '1%', consensus: null, prior: null,
       referencePeriod: 'September 2026', sourceUrl: url, sourceDate: '2026-10-01',
       definitionMatched: true, comparisonMatched: false, tone: 'neutral', notes: 'Test fixture', searchQuery: `${currency} ${factor}` }))),
     calendarChecks: CURRENCIES.flatMap(currency => CALENDAR_FACTORS.map(category => ({currency, category,
-      status: 'none_verified', sourceUrl: url, note: 'Test fixture'}))), events: [], risk: {},
+      status: 'none_verified', sourceUrl: url, note: 'Test fixture'}))), events: [], risk: {equityChangePct:null,vixChangePct:null,asOf:null,equitySourceUrl:null,vixSourceUrl:null,notes:'Fixture'},
   }};
 }
 test('cloud import rejects unsupported provenance and missing categories before changing published files', async () => {
@@ -27,6 +27,10 @@ test('cloud import rejects unsupported provenance and missing categories before 
     assert.equal(JSON.parse(await readFile(`${dir}/latest.json`)).id, 'previous');
     const incomplete = envelope(); incomplete.research.calendarChecks.pop();
     assert.throws(() => prepareCloudReport(incomplete, now), /Missing calendar search/);
+    const malformed = envelope(); malformed.research.evidence[0].actual = '1';
+    assert.throws(() => prepareCloudReport(malformed, now), /SCHEMA_MISMATCH/);
+    const extra = envelope(); extra.research.evidence[0].retrievedAt = cutoff;
+    assert.throws(() => prepareCloudReport(extra, now), /SCHEMA_EXTRA/);
   } finally { await rm(dir, {recursive: true, force: true}); }
 });
 test('cloud publication preserves archive and prevents duplicate session overwrite', async () => {

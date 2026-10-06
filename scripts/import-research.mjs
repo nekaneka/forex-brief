@@ -2,11 +2,31 @@
 import { readFile, mkdir, writeFile } from 'node:fs/promises';
 import { pathToFileURL } from 'node:url';
 import { CURRENCIES } from '../lib/config.mjs';
+import { researchSchema } from '../lib/schema.mjs';
 import { validateResearch } from '../lib/validation.mjs';
 import { buildReport } from '../lib/scoring.mjs';
 import { markdownReport } from '../lib/markdown.mjs';
 import { viennaParts } from '../lib/schedule.mjs';
 import { readJson, writeJson } from '../lib/storage.mjs';
+
+// Evaluate the small JSON Schema vocabulary used by researchSchema. Fail on new
+// unsupported keywords instead of silently accepting a weaker schema.
+function assertSchema(value, schema, at = 'research') {
+  const supported = ['type', 'enum', 'required', 'properties', 'additionalProperties', 'items'];
+  if (Object.keys(schema).some(key => !supported.includes(key))) throw Error('UNSUPPORTED_SCHEMA_KEYWORD');
+  const type = value === null ? 'null' : Array.isArray(value) ? 'array' : typeof value;
+  const types = Array.isArray(schema.type) ? schema.type : [schema.type];
+  if (!types.includes(type) || (type === 'number' && !Number.isFinite(value)) ||
+      (schema.enum && !schema.enum.includes(value))) throw Error(`SCHEMA_MISMATCH: ${at}`);
+  if (type === 'object') {
+    for (const key of schema.required || []) if (!Object.hasOwn(value, key)) throw Error(`SCHEMA_MISSING: ${at}.${key}`);
+    for (const key of Object.keys(value)) {
+      if (schema.additionalProperties === false && !Object.hasOwn(schema.properties || {}, key)) throw Error(`SCHEMA_EXTRA: ${at}.${key}`);
+      if (schema.properties?.[key]) assertSchema(value[key], schema.properties[key], `${at}.${key}`);
+    }
+  }
+  if (type === 'array' && schema.items) value.forEach((item, i) => assertSchema(item, schema.items, `${at}[${i}]`));
+}
 
 export function prepareCloudReport(input, now = new Date()) {
   if (!['morning', 'afternoon'].includes(input.session)) throw Error('INVALID_SESSION');
@@ -18,6 +38,7 @@ export function prepareCloudReport(input, now = new Date()) {
     throw Error('CONSULTED_SOURCES_REQUIRED');
   const id = `${viennaParts(new Date(cutoffMs)).date}-${input.session}`;
   if (input.id && input.id !== id) throw Error('REPORT_ID_MISMATCH');
+  assertSchema(input.research, researchSchema);
   const validated = validateResearch(structuredClone(input.research), CURRENCIES, input.consultedSources, input.cutoff);
   const verified = validated.evidence.filter(row => row.status === 'verified').length;
   // Match the existing API runner's publication gate; never replace a report with mostly unverified evidence.
