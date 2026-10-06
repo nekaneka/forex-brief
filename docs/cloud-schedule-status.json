@@ -1,0 +1,36 @@
+{
+  "checkedAt": "2026-10-06 09:39:06 UTC",
+  "researchMode": "subscription-cloud",
+  "timezone": "Europe/Vienna",
+  "tasks": [
+    {
+      "name": "Forex Brief morning",
+      "id": "6ac4c092197481918eaf993919221b3c",
+      "enabled": true,
+      "weekdaysOnly": true,
+      "time": "06:30",
+      "session": "morning"
+    },
+    {
+      "name": "Forex Brief afternoon",
+      "id": "6ac4c093be208191926484bbe766d6fb",
+      "enabled": true,
+      "weekdaysOnly": true,
+      "time": "13:30",
+      "session": "afternoon"
+    }
+  ],
+  "verification": {
+    "manualReportId": "2026-10-06-morning",
+    "publicationCommit": "523b8e6199402dbcdc64b785a0c0c57fd9a2587e",
+    "pagesRun": "37443743285",
+    "scheduleTest": "Cloud task launched through Save and run now completed its duplicate check: authenticated GitHub, cloud shell/HTTP, exact live/archive match, no research or file mutations.",
+    "scheduleTestTurn": "01a11093-2d47-70d5-a128-fdbcc063a4d0",
+    "futureNewReportRun": "Not yet observed; first complete new research publication was the manually reviewed cloud run.",
+    "schedulerMetadata": "list/peek did not expose next execution timestamps or attached-tool fields; actual execution was verified through the cloud task runtime.",
+    "legacyResearchWorkflow": "Disabled manually in GitHub; success message and disabled state verified.",
+    "laptopRequired": false,
+    "separatelyBilledModelApiUsed": false,
+    "paidDataUsed": false
+  }
+}
