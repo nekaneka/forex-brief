@@ -27,6 +27,13 @@ export function prepareCloudReport(input, now = new Date()) {
   report.researchMode = 'subscription-cloud';
   report.validationWarnings = validated.warnings;
   report.consultedSources = [...new Set(input.consultedSources)];
+  const unavailable = validated.evidence.filter(row => row.status !== 'verified');
+  const missingConsensus = validated.evidence.filter(row => !['central_bank', 'rate_decision'].includes(row.factor) && row.consensus === null);
+  const calendarGaps = validated.calendarChecks.filter(row => row.status === 'unavailable');
+  if (unavailable.length) report.limitations.push(`Unavailable evidence: ${unavailable.map(row => row.id).join(', ')}. See each source note.`);
+  if (missingConsensus.length) report.limitations.push(`${missingConsensus.length} numeric observations lack a comparable sourced consensus; prior values are not used as consensus.`);
+  if (calendarGaps.length) report.limitations.push(`${calendarGaps.length}/48 calendar categories could not be verified. No listed event is not a guarantee against unscheduled events.`);
+  if (!validated.risk.verified) report.limitations.push(validated.risk.reason);
   return report;
 }
 
