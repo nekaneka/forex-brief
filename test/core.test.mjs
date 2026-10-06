@@ -1,4 +1,5 @@
 import './schedule.test.mjs';
+import './cloud-import.test.mjs';
 import test from 'node:test';import assert from 'node:assert/strict';import {mkdtemp,readFile,rm} from 'node:fs/promises';import {tmpdir} from 'node:os';import path from 'node:path';import {spawnSync} from 'node:child_process';
 import {CURRENCIES,FACTORS,CALENDAR_FACTORS} from '../lib/config.mjs';import {scoreCurrency,makePairs,pmiPoints,classify,edgeClass,buildReport,observationEligible} from '../lib/scoring.mjs';import {dueSession} from '../lib/schedule.mjs';import {validateResearch,allowedUrl,extractSources} from '../lib/validation.mjs';import {reserveBudget,costUsd,writeJson} from '../lib/storage.mjs';import {markdownReport} from '../lib/markdown.mjs';import {overview,evidence,calendar,history,methodology,details} from '../dist/views.js';
 const cutoff='2026-09-17T06:15:00Z',url='https://www.bls.gov/news.release/cpi.htm';

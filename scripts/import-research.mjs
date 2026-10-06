@@ -1,0 +1,65 @@
+// Subscription-backed cloud research enters here. This command never calls a model API.
+import { readFile, mkdir, writeFile } from 'node:fs/promises';
+import { pathToFileURL } from 'node:url';
+import { CURRENCIES } from '../lib/config.mjs';
+import { validateResearch } from '../lib/validation.mjs';
+import { buildReport } from '../lib/scoring.mjs';
+import { markdownReport } from '../lib/markdown.mjs';
+import { viennaParts } from '../lib/schedule.mjs';
+import { readJson, writeJson } from '../lib/storage.mjs';
+
+export function prepareCloudReport(input, now = new Date()) {
+  if (!['morning', 'afternoon'].includes(input.session)) throw Error('INVALID_SESSION');
+  const cutoffMs = Date.parse(input.cutoff);
+  if (!Number.isFinite(cutoffMs) || cutoffMs > now.getTime() || now.getTime() - cutoffMs > 36 * 3600000)
+    throw Error('INVALID_OR_STALE_CUTOFF');
+  if (!Array.isArray(input.consultedSources) || !input.consultedSources.length ||
+      input.consultedSources.some(url => typeof url !== 'string'))
+    throw Error('CONSULTED_SOURCES_REQUIRED');
+  const id = `${viennaParts(new Date(cutoffMs)).date}-${input.session}`;
+  if (input.id && input.id !== id) throw Error('REPORT_ID_MISMATCH');
+  const validated = validateResearch(structuredClone(input.research), CURRENCIES, input.consultedSources, input.cutoff);
+  const verified = validated.evidence.filter(row => row.status === 'verified').length;
+  // Match the existing API runner's publication gate; never replace a report with mostly unverified evidence.
+  if (verified < validated.evidence.length / 2) throw Error('INSUFFICIENT_VERIFIED_COVERAGE');
+  const report = buildReport(validated.evidence, validated.risk, validated.events, validated.calendarChecks,
+    { id, cutoff: input.cutoff, session: input.session, generatedAt: now.toISOString() });
+  report.researchMode = 'subscription-cloud';
+  report.validationWarnings = validated.warnings;
+  report.consultedSources = [...new Set(input.consultedSources)];
+  return report;
+}
+
+export async function importCloudResearch(input, { dataDir = 'dist/data', stateDir = 'state', now = new Date() } = {}) {
+  const report = prepareCloudReport(input, now);
+  const index = await readJson(`${dataDir}/index.json`, []);
+  const state = await readJson(`${stateDir}/runs.json`, { completed: [] });
+  if (index.some(row => row.id === report.id) || state.completed.includes(report.id))
+    throw Error('REPORT_ID_EXISTS');
+  // Validate everything before writing. Publish these files together in one Git commit.
+  await mkdir(`${dataDir}/reports`, { recursive: true });
+  await writeJson(`${dataDir}/reports/${report.id}.json`, report);
+  await writeFile(`${dataDir}/reports/${report.id}.md`, markdownReport(report));
+  index.unshift({ id: report.id, generatedAt: report.generatedAt, cutoff: report.cutoff,
+    session: report.session, status: report.status, modelVersion: report.modelVersion,
+    scores: Object.fromEntries(report.currencies.map(row => [row.currency, row.score])) });
+  await writeJson(`${dataDir}/index.json`, index);
+  await writeJson(`${dataDir}/latest.json`, report);
+  await writeJson(`${stateDir}/runs.json`, { ...state, completed: [...state.completed, report.id] });
+  await writeJson(`${dataDir}/status.json`, { attemptedAt: input.cutoff, runId: report.id,
+    session: report.session, status: 'success', lastSuccess: report.generatedAt,
+    researchMode: report.researchMode,
+    message: report.status === 'partial' ? 'Cloud report published with some incomplete evidence.' : 'Cloud report published.' });
+  return report;
+}
+
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  const file = process.argv[2];
+  if (!file) throw Error('Usage: node scripts/import-research.mjs research-envelope.json');
+  const input = JSON.parse(await readFile(file, 'utf8'));
+  const report = await importCloudResearch(input, {
+    dataDir: process.env.REPORT_DATA_DIR || 'dist/data',
+    stateDir: process.env.REPORT_STATE_DIR || 'state',
+  });
+  console.log(`Prepared ${report.id}: ${report.evidence.filter(row => row.status === 'verified').length}/72 verified evidence rows, ${report.validationWarnings.length} validation warnings. Commit the generated report files together.`);
+}
