@@ -343,3 +343,20 @@ dialog::backdrop { background: rgba(3, 5, 8, 0.72); }
 @media (forced-colors: active) {
   .bar-fill, .hm-cell, .pill, .badge::before { forced-color-adjust: none; }
 }
+
+/* Authenticated cloud research launch */
+.run-button { display: inline-flex; align-items: center; justify-content: center; gap: 7px; min-height: 36px; padding: 7px 12px; border: 1px solid var(--accent); border-radius: 5px; background: rgba(38, 166, 154, 0.12); color: var(--text); font: inherit; font-size: 12px; font-weight: 600; text-decoration: none; white-space: nowrap; }
+.run-button:hover { background: rgba(38, 166, 154, 0.24); }
+.run-button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+#research-launch { max-width: 520px; padding: 28px; }
+#research-launch h2 { padding-right: 30px; }
+#research-launch p, .launch-steps { font-size: 14px; line-height: 1.6; }
+.launch-steps { padding-left: 22px; margin: 20px 0; }
+.launch-steps li { margin-bottom: 10px; }
+.launch-link { margin-bottom: 10px; }
+#research-launch .launch-note { color: var(--muted); font-size: 12px; }
+@media (max-width: 620px) {
+  .toolbar { flex-wrap: wrap; gap: 10px; }
+  .controls { flex-wrap: wrap; }
+  #research-launch { padding: 24px 20px; }
+}

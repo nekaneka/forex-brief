@@ -36,6 +36,7 @@
       <div class="controls">
         <label class="sr-only" for="report-select">Choose report</label>
         <select id="report-select"><option value="latest">Latest report</option><option value="demo">Illustrative preview</option></select>
+        <button id="run-research" class="run-button" aria-haspopup="dialog" aria-controls="research-launch">Run research <span aria-hidden="true">↗</span></button>
         <button id="refresh" class="icon-button" aria-label="Refresh published report">↻</button>
       </div>
     </div>
@@ -49,6 +50,20 @@
       <span><span id="schedule-note">Schedule: see Method</span> · <span id="model-version">Model 1.0</span></span>
     </footer>
   </main>
+
+  <dialog id="research-launch" aria-labelledby="research-launch-title" aria-describedby="research-launch-description">
+    <button id="close-research-launch" class="icon-button close" aria-label="Close research launch">×</button>
+    <h2 id="research-launch-title">Run cloud research</h2>
+    <p id="research-launch-description">Launch from the ChatGPT account that owns the Forex Brief tasks. Opening these controls does not start research yet.</p>
+    <ol class="launch-steps">
+      <li>Open the cloud controls below and sign in if needed.</li>
+      <li>Select <strong>Forex Brief morning</strong> or <strong>Forex Brief afternoon</strong>.</li>
+      <li>Open the task’s action menu and choose <strong>Save and run now</strong>.</li>
+    </ol>
+    <a class="run-button launch-link" href="https://chatgpt.com/c/6ac4156b-b858-83ed-a5de-98a485e6a009" target="_blank" rel="noopener noreferrer">Open cloud controls <span aria-hidden="true">↗</span></a>
+    <p class="launch-note">Research runs in the cloud using the existing subscription. Each session publishes once per day: running early fills that session; an already published session is checked and skipped.</p>
+    <p class="launch-note">When the run finishes, return here and use ↻ to load the published report.</p>
+  </dialog>
 
   <dialog id="detail" aria-labelledby="detail-title">
     <button id="close-detail" class="icon-button close" aria-label="Close currency details">×</button>

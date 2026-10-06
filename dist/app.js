@@ -137,6 +137,10 @@ document.addEventListener('change', (e) => {
   }
 });
 
+$('#run-research').onclick = () => $('#research-launch').showModal();
+$('#close-research-launch').onclick = () => $('#research-launch').close();
+$('#research-launch').addEventListener('click', (e) => { if (e.target === $('#research-launch')) $('#research-launch').close(); });
+
 $('#close-detail').onclick = () => $('#detail').close();
 $('#detail').addEventListener('click', (e) => { if (e.target === $('#detail')) $('#detail').close(); });
 $('#refresh').onclick = () => load();
