@@ -1,40 +1,55 @@
 # Forex Brief
 
-A public, mobile-friendly Forex fundamental dashboard for USD, EUR, GBP, JPY, CHF, AUD, NZD and CAD. English research runs start at 06:30 and 13:30 Europe/Vienna on weekdays. The timezone follows Austrian daylight saving automatically. These are scheduled starts, not guaranteed publication times. The UI is a static site; scheduled research runs securely in GitHub Actions.
+Public Forex fundamental dashboard for USD, EUR, GBP, JPY, CHF, AUD, NZD and CAD. English reports include currency-strength diagrams, 28 pairs, GBPUSD focus, source evidence, a seven-day calendar and archived scores.
 
-## Current state
+## Cloud operation
 
-The dashboard includes an explicitly labelled synthetic preview. No live report or historical track record is preloaded. Live generation requires an OpenAI API key with API billing enabled, a GitHub repository, GitHub Pages, and enabled Actions. A ChatGPT subscription does not fund this API pipeline. Adding the key activates paid scheduled research within the application budget controls.
+Research runs in ChatGPT cloud Work through the connected GitHub plugin, using the ChatGPT subscription and free public sources. GitHub Actions publishes the static dashboard after report commits. The user's laptop can be off. This route does not use a separately billed model API or paid data subscription.
 
-## One-time activation
+Weekday scheduled starts are 06:30 and 13:30 Europe/Vienna, following Austrian daylight saving. These are starts, not guaranteed publication times. Research duration, service availability and subscription usage limits can delay or prevent a report; the last successful report keeps its original timestamp.
 
-1. Put this project in a public GitHub repository on its `main` branch.
-2. In **Settings → Pages → Build and deployment**, choose **GitHub Actions** as the source.
-3. In **Settings → Secrets and variables → Actions**, add the repository secret **OPENAI_API_KEY**. Enter it directly in GitHub; do not put it in chat, source files, or frontend code.
-4. Under **Actions**, run **Publish Forex Brief** to deploy the dashboard.
-5. Run **Scheduled Forex research** once, with `morning`, to verify real source coverage and API access. Subsequent eligible sessions run automatically. Successful reports replace the preview and fill the archive.
+The first cloud report is 2026-10-06-morning, published manually after review. It verified 69/72 factor observations and sourced 38 numeric consensus observations; one of 48 calendar categories was unavailable. Japan employment and Switzerland core inflation/employment were unavailable. The dated review audit is under work/research/cloud-test-2026-10-06/ . A successful validator does not guarantee every extracted figure is correct.
 
-Scheduled starts are 06:30 and 13:30 Vienna time, Monday–Friday, with retry opportunities 10 and 20 minutes later. GitHub may delay or drop scheduled jobs, so publication times are not guaranteed. The application accepts scheduled runs only in 06:30–06:59 / 13:30–13:59 and deduplicates successful session IDs. It rejects the inactive UTC offset and skips weekends; UTC triggers cover both Austrian DST offsets. Explicit manual runs can run outside those windows, including weekends, but still deduplicate completed sessions. Public repository schedules may disable after 60 days of inactivity. Saved report commits normally provide activity; monitor failed workflows.
+The recurring tasks live in the ChatGPT web account, not this repository or a local desktop automation. See docs/cloud-runbook.md for the standalone procedure and docs/cloud-research-brief.md for the original analyst brief. Keep the GitHub connector authorized for this repository. The legacy Scheduled Forex research GitHub workflow is disabled; Publish Forex Brief remains enabled.
 
-`lib/schedule.mjs` is the single schedule definition. After editing it, run `node scripts/export-config.mjs` to update the public schedule in `dist/data/methodology.json` and the generated cron block in the research workflow. `npm run check` rejects drift between those files. The schedule tests check window boundaries, weekend exclusions, retries, deduplication and the actual workflow triggers across a full year, including both DST changes.
+## Research and publication
 
-## Budget
+The cloud task reads current main and checks whether today's session is already published. It browses underlying releases for all 72 currency/factor combinations and 48 calendar categories, then records genuinely consulted URLs separately. Unsupported figures and consensus stay null; previous is never used as consensus. Official sources are preferred, with allowed free secondary sources for gaps.
 
-Default application budget: **USD 20 per UTC calendar month**. Model: `gpt-5.4-mini`, priced in this implementation at $0.75/M input tokens, $0.075/M cached input, $4.50/M output, and $0.01/web-search call (verified 2026-09-17). Prices are configuration assumptions and must be reviewed if OpenAI changes them. There are two bounded research batches per report, at most ten search calls and 16,000 output tokens per batch. Afternoon batches are given the preceding evidence and focus on updates; they still check every category.
+Create a research envelope containing cutoff (UTC ISO timestamp), session (morning or afternoon), research (matching researchSchema), and consultedSources (actual consulted URLs). In the cloud checkout, run:
 
-`state/budget.json` records measured token/search estimates and a $1.25 reservation before each request. Known rejected requests release reservations; ambiguous failures keep them to avoid silently retrying possible paid calls. The budget guard stops future calls when insufficient room remains. **This is an estimated application spending guard, not a provider-enforced billing cap or guaranteed monthly price.** Set provider billing controls too. Costs, taxes, rounding, provider price changes, and ambiguous calls can differ. Full daily coverage might exhaust the budget before month end; never silently lower verification standards to keep publishing.
+```text
+node scripts/import-research.mjs envelope.json
+npm test
+npm run check
+```
 
-## Data and scoring
+The importer validates the complete schema, source provenance and categories, calculates scores through the existing model, renders the seven-section report with exactly five summary bullets, records limitations and prevents duplicate session overwrites. It rejects future/stale cutoffs and reports with fewer than half of their observations verified. Commit all generated report, index, latest, status and session-state files together on main, preserving unrelated changes. Verify both Pages deployment and the exact live report ID.
 
-`lib/config.mjs` lists official sources, exact series, numeric surprise thresholds, and freshness windows. The web-enabled model gathers structured evidence, does not calculate totals, and must document all 72 currency/factor searches plus 48 calendar category checks. Source URLs must be on the allowlist and appear in the API's consulted sources/citations. This establishes source provenance, but cannot guarantee the model extracted every value correctly: review the first live reports against primary releases before relying on them.
+A broad research or validation failure retains the previous report. Do not weaken verification to force a new report. A partial evidence set can meet the model's quality thresholds; the model status verified does not mean every factor is available. Review source notes and limitations.
 
-`lib/scoring.mjs` calculates all adjustments, ranks, 28 conventionally quoted pairs, GBPUSD direction, and exactly five summary bullets. Scores recompute from 50. Missing consensus never becomes a surprise comparison with the prior. CPI is counted once; rate decisions contextualize one policy component. A low-quality currency is provisional and its pair directions are UNRATED. History records research scores, not returns or trading probabilities. Model thresholds are heuristics, not calibrated statistical confidence.
+## Scoring
 
-Australia's discontinued Retail Trade is replaced by household spending. New Zealand and Switzerland use explicitly named local core / PMI series. Unavailable configured series remain unavailable rather than switching definitions. The initial all-or-nothing collection quality gate requires at least half of new observations to validate. It keeps the last successful report during broad failures. Smaller gaps may retain dated previous observations and are disclosed. Stale observations are displayed but do not score.
+lib/config.mjs defines exact series, surprise thresholds and freshness windows. lib/scoring.mjs calculates adjustments from a neutral 50, bounded 0–100 scores, ranks and pair differences. Missing consensus cannot award a surprise comparison against the prior. CPI contributes once; rate decisions contextualize one guidance component. Low-quality currencies are provisional and their pair directions are UNRATED.
 
-## Local use
+Implementation choices added to the original brief include numeric surprise thresholds, 40/60 headline/core CPI weighting, numeric S&P500/VIX risk thresholds, freshness windows and quality gates. These are model heuristics, not calibrated probabilities or proven trading advantages. History shows research scores, not trading returns. Stale observations may be displayed but do not score.
 
-Node.js 22 or later; no npm dependencies or installation required.
+Australia uses the Household Spending Indicator following discontinued Retail Trade. New Zealand and Switzerland use explicitly configured local core/PMI series. Missing exact series remain unavailable.
+
+## Output
+
+- dist/data/latest.json: latest successful report, never a demo.
+- dist/data/reports/: session JSON and full Markdown report.
+- dist/data/index.json: archive and score history.
+- dist/data/status.json: latest outcome shown on the site.
+- state/runs.json: completed session IDs.
+- work/research/: source evidence and audit, stored deliberately through GitHub tools.
+
+Only dist is deployed. Visitor traffic cannot trigger model calls. The synthetic preview remains explicitly labelled and separate from real reports. Retrieved text is escaped and external links use noopener/noreferrer. There is no broker connection, trade execution, entry price, stop, target, leverage or position sizing.
+
+## Local development and legacy API route
+
+Node.js 22 or later; no npm dependencies are required.
 
 ```text
 npm test
@@ -42,23 +57,8 @@ npm run check
 npm run dev
 ```
 
-Open http://127.0.0.1:4173. Set `OPENAI_API_KEY` securely in the process environment and use `npm run report -- --session morning` for a live run. The application does not load `.env` files automatically. `npm run demo` regenerates only synthetic preview data. `node scripts/export-config.mjs` refreshes the public methodology after a configuration edit.
+Open http://127.0.0.1:4173 . npm run demo regenerates only the synthetic preview. lib/schedule.mjs and scripts/export-config.mjs maintain public schedule metadata and the retained legacy workflow cron; checks reject configuration drift.
 
-## Output and failure behavior
+scripts/run-report.mjs is the legacy separately billed API collector. It is retained for reference and testing and is not part of subscription cloud operation. It requires OPENAI_API_KEY and separate API billing; ChatGPT subscriptions do not fund that endpoint. Its budget ledger/estimates apply only to that legacy route. Do not enable that workflow or invoke the runner for this user's subscription-only setup.
 
-- `dist/data/latest.json`: last successful report; never a demo.
-- `dist/data/reports/`: immutable session JSON and full seven-section Markdown reports.
-- `dist/data/index.json`: archive and score history.
-- `dist/data/status.json`: last run outcome, displayed on the website.
-- `state/`: session deduplication and estimated cost ledger, committed after attempts.
-- `work/research/`: raw API output for local diagnostics, ignored by Git.
-
-GitHub deploys only `dist`. Credentials are available only to the research step; visitor traffic cannot trigger paid model calls. There is no broker connection, trade execution, entry, stop, target, leverage, or position sizing. Treat retrieved content as untrusted data. Site links open with `noopener noreferrer`, and evidence text is escaped.
-
-## Validation and limitations
-
-Automated tests cover scoring boundaries, numeric surprise logic, missing consensus, mixed CPI signals, score clamping, stale and future data, pair direction and ties, low-quality handoff suppression, Austrian DST, duplicate sessions, provenance, budget guards, and retaining the last report when no API key is configured. Without a funded API key, the first real collection run and actual recurring costs remain unverified.
-
-Official API docs: https://developers.openai.com/api/docs/guides/tools-web-search and https://developers.openai.com/api/docs/guides/structured-outputs
-
-GitHub schedule docs: https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule
+Tests cover scoring boundaries, missing/mismatched consensus, CPI reconciliation, stale/future data, pairs and ties, low-quality suppression, Austrian DST, duplicate protection, schema/provenance failures and preserving the last report. The cloud import and publication path was tested independently; recurring execution also depends on the account's scheduled-task and connector availability.
