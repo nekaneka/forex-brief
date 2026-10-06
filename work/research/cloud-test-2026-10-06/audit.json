@@ -1,0 +1,106 @@
+{
+  "cutoffUTC": "2026-10-06T09:17:56.030Z",
+  "cutoffVienna": "Tuesday, 6 October 2026 at 11:17:56 CEST",
+  "repository": "nekaneka/forex-brief",
+  "inspectedMain": "21bcd5c6da4302dfde2c188555ef98fb7f00e8e4",
+  "codeRevision": "1d2bedd1cdd5fdde30f0486c2921764df7426110",
+  "mainChange": "Only docs/cloud-research-brief.md added; inspected code unchanged.",
+  "schemaValidation": "PASS: recursive evaluation of every keyword used by unchanged researchSchema (type, enum, required, properties, additionalProperties, items).",
+  "validateResearch": "EXECUTED",
+  "warnings": [],
+  "evidence": {
+    "total": 72,
+    "verified": 69,
+    "unavailable": 3,
+    "numericConsensus": 38,
+    "byCurrency": {
+      "USD": {
+        "verified": 9,
+        "total": 9
+      },
+      "EUR": {
+        "verified": 9,
+        "total": 9
+      },
+      "GBP": {
+        "verified": 9,
+        "total": 9
+      },
+      "JPY": {
+        "verified": 8,
+        "total": 9
+      },
+      "CHF": {
+        "verified": 7,
+        "total": 9
+      },
+      "AUD": {
+        "verified": 9,
+        "total": 9
+      },
+      "NZD": {
+        "verified": 9,
+        "total": 9
+      },
+      "CAD": {
+        "verified": 9,
+        "total": 9
+      }
+    }
+  },
+  "calendar": {
+    "checks": 48,
+    "statusCounts": {
+      "scheduled": 12,
+      "none_verified": 35,
+      "unavailable": 1
+    },
+    "eventsRetained": 12,
+    "eventsSubmitted": 12
+  },
+  "risk": {
+    "equityChangePct": 0.66,
+    "vixChangePct": 1.37,
+    "asOf": "2026-10-05",
+    "equitySourceUrl": "https://www.investing.com/indices/us-spx-500-historical-data",
+    "vixSourceUrl": "https://www.investing.com/indices/volatility-s-p-500-historical-data?cid=1096487",
+    "notes": "Latest completed daily observation, 5 October. Provider closing percentage changes; no exact close timestamp asserted. Positive equities and positive VIX imply mixed, not risk-on. Date-only freshness is conservatively measured from UTC midnight.",
+    "verified": true,
+    "regime": "mixed",
+    "reason": "S&P 500 daily change 0.66%; VIX daily change 1.37%, as of 2026-10-05. Risk-on requires equities \u2265+0.5% and VIX \u2264\u22125%; risk-off requires equities \u2264\u22120.5% and VIX \u2265+5%. Otherwise mixed."
+  },
+  "sourceRecords": 143,
+  "uniqueConsultedUrls": 101,
+  "arithmeticAssertions": "PASS: all 8 scores, all 28 pair edges; exactly five summary bullets",
+  "latestJsonSha256": "202a8cecd0b160e9aa853a373460667b47fe6f2dc19eb433bc814c568ff2744d",
+  "limitations": [
+    "Manual cloud test; unpublished. No market files, schedules, keys or paid APIs were changed or used.",
+    "Unavailable: JPY comparable seasonally adjusted employment change; CHF FSO core inflation 1; CHF comparable total employment. Missing consensus remains null and surprise scoring is withheld.",
+    "EUR retail uses the verified 4 September release for July; the August release due today could not be verified. Quarterly NZD releases and RBNZ sectoral core use their explicit release/update dates.",
+    "Some secondary-provider fallbacks are used when official pages did not expose a usable figure; primary attribution does not imply every consensus is official. Latest verified central-bank communications are dated, not a claim to have captured every subsequent speech.",
+    "Calendar covers consulted listings for the next seven days; supplemental surveys are identified. No listed event is not a guarantee against unscheduled communications. NZD statistical-update time is unverified.",
+    "The website model status verified reflects its quality thresholds; it does not mean this report is published or that all evidence is complete."
+  ],
+  "exactRetrievalErrors": [
+    "URL https://ec.europa.eu/eurostat/en/web/products-euro-indicators/w/4-06102026-ap is not accessible via this tool.",
+    "Failed to fetch https://www.ecb.europa.eu/press/key/date/2026/html/index.en.html: (404) Not Found",
+    "Failed to fetch https://www150.statcan.gc.ca/n1/daily-quotidien/260904/dq260904a-eng.htm: (400) Timeout fetching"
+  ],
+  "schemaDependencyNote": "ModuleNotFoundError: No module named 'jsonschema'; used exact-schema recursive evaluator instead. Repository validator unchanged.",
+  "repositoryTests": {
+    "command": "npm test",
+    "exitCode": 0,
+    "passed": 16,
+    "failed": 0,
+    "note": "Includes missing-key test: OPENAI_API_KEY is not configured. No model call was made."
+  },
+  "repositoryChecks": {
+    "command": "npm run check",
+    "exitCode": 0,
+    "result": "Syntax, assets, source registry, preview arithmetic, and public-data checks passed."
+  },
+  "runtimeWarnings": [
+    "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.",
+    "ExperimentalWarning: VM Modules is an experimental feature and might change at any time"
+  ]
+}
