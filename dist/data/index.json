@@ -1,5 +1,23 @@
 [
   {
+    "id": "2026-10-07-morning",
+    "generatedAt": "2026-10-07T04:34:21.378Z",
+    "cutoff": "2026-10-07T04:27:14Z",
+    "session": "morning",
+    "status": "verified",
+    "modelVersion": "1.0.0",
+    "scores": {
+      "GBP": 73,
+      "NZD": 73,
+      "USD": 70,
+      "AUD": 68,
+      "CHF": 60,
+      "EUR": 58,
+      "JPY": 53,
+      "CAD": 30
+    }
+  },
+  {
     "id": "2026-10-06-afternoon",
     "generatedAt": "2026-10-06T09:49:49.954Z",
     "cutoff": "2026-10-06T09:46:46Z",

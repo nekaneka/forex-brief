@@ -1,9 +1,9 @@
 {
-  "attemptedAt": "2026-10-06T09:46:46Z",
-  "runId": "2026-10-06-afternoon",
-  "session": "afternoon",
+  "attemptedAt": "2026-10-07T04:27:14Z",
+  "runId": "2026-10-07-morning",
+  "session": "morning",
   "status": "success",
-  "lastSuccess": "2026-10-06T09:49:49.954Z",
+  "lastSuccess": "2026-10-07T04:34:21.378Z",
   "researchMode": "subscription-cloud",
   "message": "Cloud report published."
 }

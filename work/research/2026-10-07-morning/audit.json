@@ -1,0 +1,72 @@
+{
+  "id": "2026-10-07-morning",
+  "cutoff": "2026-10-07T04:27:14Z",
+  "generatedAt": "2026-10-07T04:34:21.378Z",
+  "sourceRevision": "83d3bf0ff63ce10224e49f8f444aec7dc2d1ae89",
+  "researchMode": "subscription-cloud",
+  "verified": 69,
+  "totalEvidence": 72,
+  "coverageByCurrency": {
+    "USD": 9,
+    "EUR": 9,
+    "GBP": 9,
+    "JPY": 8,
+    "CHF": 7,
+    "AUD": 9,
+    "NZD": 9,
+    "CAD": 9
+  },
+  "calendarCategories": 48,
+  "calendarUnavailable": 0,
+  "events": 21,
+  "consultedUrlCount": 99,
+  "missingConsensus": 21,
+  "warnings": [],
+  "limitations": [
+    "Unavailable evidence: JPY:employment, CHF:core_cpi, CHF:employment. See each source note.",
+    "21 numeric observations lack a comparable sourced consensus; prior values are not used as consensus."
+  ],
+  "scores": {
+    "GBP": 73,
+    "NZD": 73,
+    "USD": 70,
+    "AUD": 68,
+    "CHF": 60,
+    "EUR": 58,
+    "JPY": 53,
+    "CAD": 30
+  },
+  "qualityChecks": {
+    "arithmetic": true,
+    "pairs": 28,
+    "sections": 7,
+    "summaryBullets": 5
+  },
+  "tests": {
+    "command": "npm test",
+    "passed": 19,
+    "failed": 0
+  },
+  "checks": {
+    "command": "npm run check",
+    "passed": true
+  },
+  "retrievalLimitations": [
+    {
+      "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/260904/dq260904a-eng.htm",
+      "error": "400 Timeout fetching"
+    },
+    {
+      "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/260924/dq260924a-eng.htm",
+      "error": "400 Timeout fetching"
+    }
+  ],
+  "changesFromPreviousReport": [
+    "Fresh October 6 equity and VIX observations; mixed risk.",
+    "Mann October 6 remarks and Rogers October 1 speech checked.",
+    "Newest Canadian August preliminary retail sales used with no matched consensus; no retail points.",
+    "Unverified USD/GBP PMI consensus removed; absolute-level scoring unchanged.",
+    "Upcoming event times converted from explicit BST to UTC; RBA minutes corrected to 00:30 UTC."
+  ],
+  "publication": "Prepared and validated; deployment outcome must be verified separately."
+}
