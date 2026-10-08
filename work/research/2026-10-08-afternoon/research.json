@@ -1,1094 +1,4 @@
 {
-  "id": "2026-10-08-afternoon",
-  "modelVersion": "1.0.0",
-  "demo": false,
-  "status": "verified",
-  "cutoff": "2026-10-08T11:30:36Z",
-  "generatedAt": "2026-10-08T11:32:02.289Z",
-  "session": "afternoon",
-  "timezone": "Europe/Vienna",
-  "currencies": [
-    {
-      "currency": "USD",
-      "score": 75,
-      "bias": "Bullish",
-      "quality": "High",
-      "agreement": "Mixed",
-      "verifiedFactors": 9,
-      "totalFactors": 9,
-      "eligibleComponents": 8,
-      "provisional": false,
-      "factors": [
-        {
-          "id": "central_bank",
-          "label": "Central-bank guidance",
-          "points": 15,
-          "reason": "Analyst inference: strong hawkish. In his October 8 speech, Governor Waller said inflation is too high, policy will focus on inflation in the near term, and he anticipates additional hikes if data arrive as expected, while retaining flexibility on timing. This reinforces rather than weakens the collective hawkish signal in the October 7 FOMC minutes. Rate decision is context within this single policy adjustment.",
-          "evidenceIds": [
-            "USD:central_bank",
-            "USD:rate_decision"
-          ],
-          "eligible": true
-        },
-        {
-          "id": "inflation",
-          "label": "Inflation",
-          "points": 5,
-          "reason": "Headline surprise 0 pp (40%); core surprise 0.1 pp (60%). Weighted component rounded to the nearest 5 points.",
-          "evidenceIds": [
-            "USD:headline_cpi",
-            "USD:core_cpi"
-          ],
-          "eligible": true
-        },
-        {
-          "id": "employment",
-          "label": "Employment",
-          "points": -10,
-          "reason": "Employment surprise -61 thousand persons; thresholds 10 / 75. NFP SA; August prior revised down to +133k.",
-          "evidenceIds": [
-            "USD:employment"
-          ],
-          "eligible": true
-        },
-        {
-          "id": "unemployment",
-          "label": "Unemployment",
-          "points": -5,
-          "reason": "Unemployment 4.2% versus prior 4.1%. Scored only here; employment counts are separate.",
-          "evidenceIds": [
-            "USD:unemployment"
-          ],
-          "eligible": true
-        },
-        {
-          "id": "gdp",
-          "label": "GDP",
-          "points": 10,
-          "reason": "GDP surprise 0.7 pp on the configured growth basis. Thresholds 0.1 / 0.5 pp.",
-          "evidenceIds": [
-            "USD:gdp"
-          ],
-          "eligible": true
-        },
-        {
-          "id": "pmi",
-          "label": "PMI",
-          "points": 5,
-          "reason": "S&P Global composite output PMI, latest flash or final: 58.4. Bands: <45, 45–<50, 50–55, >55. One series only.",
-          "evidenceIds": [
-            "USD:pmi"
-          ],
-          "eligible": true
-        },
-        {
-          "id": "retail_sales",
-          "label": "Retail / household spending",
-          "points": 5,
-          "reason": "Spending surprise 0.4 pp; Total retail and food services sales, seasonally adjusted m/m %.",
-          "evidenceIds": [
-            "USD:retail_sales"
-          ],
-          "eligible": true
-        },
-        {
-          "id": "risk",
-          "label": "Risk sentiment",
-          "points": 0,
-          "reason": "S&P 500 daily change -0.22%; VIX daily change 0.47%, as of 2026-10-07. Risk-on requires equities ≥+0.5% and VIX ≤−5%; risk-off requires equities ≤−0.5% and VIX ≥+5%. Otherwise mixed.",
-          "evidenceIds": [],
-          "eligible": true
-        }
-      ],
-      "rank": 1
-    },
-    {
-      "currency": "GBP",
-      "score": 73,
-      "bias": "Bullish",
-      "quality": "High",
-      "agreement": "Strong",
-      "verifiedFactors": 9,
-      "totalFactors": 9,
-      "eligibleComponents": 7,
-      "provisional": false,
-      "factors": [
-        {
-          "id": "central_bank",
-          "label": "Central-bank guidance",
-          "points": 10,
-          "reason": "Analyst inference: moderately hawkish. Mann's October 6 inflation-persistence remarks support her October 1 official call for tighter policy. This individual stance is not an MPC commitment; September hold and vote split provide context. Rate decision is context within this single policy adjustment.",
-          "evidenceIds": [
-            "GBP:central_bank",
-            "GBP:rate_decision"
-          ],
-          "eligible": true
-        },
-        {
-          "id": "inflation",
-          "label": "Inflation",
-          "points": 0,
-          "reason": "Headline surprise 0 pp (40%); core surprise 0 pp (60%). Weighted component rounded to the nearest 5 points.",
-          "evidenceIds": [
-            "GBP:headline_cpi",
-            "GBP:core_cpi"
-          ],
-          "eligible": true
-        },
-        {
-          "id": "employment",
-          "label": "Employment",
-          "points": 0,
-          "reason": "No comparable employment consensus; no adjustment.",
-          "evidenceIds": [
-            "GBP:employment"
-          ],
-          "eligible": false
-        },
-        {
-          "id": "unemployment",
-          "label": "Unemployment",
-          "points": 0,
-          "reason": "Unemployment 4.9% versus prior 4.9%. Scored only here; employment counts are separate.",
-          "evidenceIds": [
-            "GBP:unemployment"
-          ],
-          "eligible": true
-        },
-        {
-          "id": "gdp",
-          "label": "GDP",
-          "points": 5,
-          "reason": "GDP surprise 0.1 pp on the configured growth basis. Thresholds 0.05 / 0.3 pp.",
-          "evidenceIds": [
-            "GBP:gdp"
-          ],
-          "eligible": true
-        },
-        {
-          "id": "pmi",
-          "label": "PMI",
-          "points": 3,
-          "reason": "S&P Global UK composite output PMI, latest flash or final: 52. Bands: <45, 45–<50, 50–55, >55. One series only.",
-          "evidenceIds": [
-            "GBP:pmi"
-          ],
-          "eligible": true
-        },
-        {
-          "id": "retail_sales",
-          "label": "Retail / household spending",
-          "points": 5,
-          "reason": "Spending surprise 0.7 pp; Retail sales volume including automotive fuel m/m %, seasonally adjusted.",
-          "evidenceIds": [
-            "GBP:retail_sales"
-          ],
-          "eligible": true
-        },
-        {
-          "id": "risk",
-          "label": "Risk sentiment",
-          "points": 0,
-          "reason": "S&P 500 daily change -0.22%; VIX daily change 0.47%, as of 2026-10-07. Risk-on requires equities ≥+0.5% and VIX ≤−5%; risk-off requires equities ≤−0.5% and VIX ≥+5%. Otherwise mixed.",
-          "evidenceIds": [],
-          "eligible": true
-        }
-      ],
-      "rank": 2
-    },
-    {
-      "currency": "NZD",
-      "score": 73,
-      "bias": "Bullish",
-      "quality": "High",
-      "agreement": "Mixed",
-      "verifiedFactors": 9,
-      "totalFactors": 9,
-      "eligibleComponents": 7,
-      "provisional": false,
-      "factors": [
-        {
-          "id": "central_bank",
-          "label": "Central-bank guidance",
-          "points": 10,
-          "reason": "Analyst inference: moderately hawkish. Raised OCR 25 bp; further increases may be needed if inflation follows the projected path, while removal of stimulus remains gradual. Rate decision is context within this single policy adjustment.",
-          "evidenceIds": [
-            "NZD:central_bank",
-            "NZD:rate_decision"
-          ],
-          "eligible": true
-        },
-        {
-          "id": "inflation",
-          "label": "Inflation",
-          "points": 5,
-          "reason": "Only headline has comparable consensus: surprise 0.1 pp. Use the available component once; evidence coverage reduced.",
-          "evidenceIds": [
-            "NZD:headline_cpi",
-            "NZD:core_cpi"
-          ],
-          "eligible": false
-        },
-        {
-          "id": "employment",
-          "label": "Employment",
-          "points": 10,
-          "reason": "Employment surprise 0.3 %; thresholds 0.05 / 0.3. SA employment q/q percentage change. Local August 5 release.",
-          "evidenceIds": [
-            "NZD:employment"
-          ],
-          "eligible": true
-        },
-        {
-          "id": "unemployment",
-          "label": "Unemployment",
-          "points": -5,
-          "reason": "Unemployment 5.6% versus prior 5.4%. Scored only here; employment counts are separate.",
-          "evidenceIds": [
-            "NZD:unemployment"
-          ],
-          "eligible": true
-        },
-        {
-          "id": "gdp",
-          "label": "GDP",
-          "points": 5,
-          "reason": "GDP surprise 0.1 pp on the configured growth basis. Thresholds 0.05 / 0.3 pp.",
-          "evidenceIds": [
-            "NZD:gdp"
-          ],
-          "eligible": true
-        },
-        {
-          "id": "pmi",
-          "label": "PMI",
-          "points": 3,
-          "reason": "BNZ-BusinessNZ manufacturing PMI: 53.1. Bands: <45, 45–<50, 50–55, >55. One series only.",
-          "evidenceIds": [
-            "NZD:pmi"
-          ],
-          "eligible": true
-        },
-        {
-          "id": "retail_sales",
-          "label": "Retail / household spending",
-          "points": -5,
-          "reason": "Spending surprise -0.6 pp; Quarterly retail sales volumes q/q %, seasonally adjusted.",
-          "evidenceIds": [
-            "NZD:retail_sales"
-          ],
-          "eligible": true
-        },
-        {
-          "id": "risk",
-          "label": "Risk sentiment",
-          "points": 0,
-          "reason": "S&P 500 daily change -0.22%; VIX daily change 0.47%, as of 2026-10-07. Risk-on requires equities ≥+0.5% and VIX ≤−5%; risk-off requires equities ≤−0.5% and VIX ≥+5%. Otherwise mixed.",
-          "evidenceIds": [],
-          "eligible": true
-        }
-      ],
-      "rank": 2
-    },
-    {
-      "currency": "AUD",
-      "score": 68,
-      "bias": "Slightly Bullish",
-      "quality": "High",
-      "agreement": "Strong",
-      "verifiedFactors": 9,
-      "totalFactors": 9,
-      "eligibleComponents": 7,
-      "provisional": false,
-      "factors": [
-        {
-          "id": "central_bank",
-          "label": "Central-bank guidance",
-          "points": 10,
-          "reason": "Analyst inference: moderately hawkish. Unanimous 25 bp increase; persistent inflation and upside risks leave further tightening conditional on incoming evidence. Rate decision is context within this single policy adjustment.",
-          "evidenceIds": [
-            "AUD:central_bank",
-            "AUD:rate_decision"
-          ],
-          "eligible": true
-        },
-        {
-          "id": "inflation",
-          "label": "Inflation",
-          "points": 0,
-          "reason": "Headline surprise -0.1 pp (40%); core surprise 0 pp (60%). Weighted component rounded to the nearest 5 points.",
-          "evidenceIds": [
-            "AUD:headline_cpi",
-            "AUD:core_cpi"
-          ],
-          "eligible": true
-        },
-        {
-          "id": "employment",
-          "label": "Employment",
-          "points": 5,
-          "reason": "Employment surprise 19.5 thousand persons; thresholds 5 / 25. SA employment, thousands; July revised. Rounded official figures used.",
-          "evidenceIds": [
-            "AUD:employment"
-          ],
-          "eligible": true
-        },
-        {
-          "id": "unemployment",
-          "label": "Unemployment",
-          "points": -5,
-          "reason": "Unemployment 4.6% versus prior 4.5%. Scored only here; employment counts are separate.",
-          "evidenceIds": [
-            "AUD:unemployment"
-          ],
-          "eligible": true
-        },
-        {
-          "id": "gdp",
-          "label": "GDP",
-          "points": 5,
-          "reason": "GDP surprise 0.1 pp on the configured growth basis. Thresholds 0.05 / 0.3 pp.",
-          "evidenceIds": [
-            "AUD:gdp"
-          ],
-          "eligible": true
-        },
-        {
-          "id": "pmi",
-          "label": "PMI",
-          "points": 3,
-          "reason": "S&P Global Australia composite output PMI, latest flash or final: 51.3. Bands: <45, 45–<50, 50–55, >55. One series only.",
-          "evidenceIds": [
-            "AUD:pmi"
-          ],
-          "eligible": true
-        },
-        {
-          "id": "retail_sales",
-          "label": "Retail / household spending",
-          "points": 0,
-          "reason": "Comparable spending consensus unavailable.",
-          "evidenceIds": [
-            "AUD:retail_sales"
-          ],
-          "eligible": false
-        },
-        {
-          "id": "risk",
-          "label": "Risk sentiment",
-          "points": 0,
-          "reason": "S&P 500 daily change -0.22%; VIX daily change 0.47%, as of 2026-10-07. Risk-on requires equities ≥+0.5% and VIX ≤−5%; risk-off requires equities ≤−0.5% and VIX ≥+5%. Otherwise mixed.",
-          "evidenceIds": [],
-          "eligible": true
-        }
-      ],
-      "rank": 4
-    },
-    {
-      "currency": "CHF",
-      "score": 60,
-      "bias": "Slightly Bullish",
-      "quality": "Medium",
-      "agreement": "Strong",
-      "verifiedFactors": 7,
-      "totalFactors": 9,
-      "eligibleComponents": 5,
-      "provisional": false,
-      "factors": [
-        {
-          "id": "central_bank",
-          "label": "Central-bank guidance",
-          "points": 0,
-          "reason": "Analyst inference: neutral. Rate held at zero; conditional inflation projection and readiness to intervene in FX support a data-dependent assessment. Rate decision is context within this single policy adjustment.",
-          "evidenceIds": [
-            "CHF:central_bank",
-            "CHF:rate_decision"
-          ],
-          "eligible": true
-        },
-        {
-          "id": "inflation",
-          "label": "Inflation",
-          "points": 0,
-          "reason": "Only headline has comparable consensus: surprise 0 pp. Use the available component once; evidence coverage reduced.",
-          "evidenceIds": [
-            "CHF:headline_cpi",
-            "CHF:core_cpi"
-          ],
-          "eligible": false
-        },
-        {
-          "id": "employment",
-          "label": "Employment",
-          "points": 0,
-          "reason": "No comparable employment consensus; no adjustment.",
-          "evidenceIds": [
-            "CHF:employment"
-          ],
-          "eligible": false
-        },
-        {
-          "id": "unemployment",
-          "label": "Unemployment",
-          "points": 0,
-          "reason": "Unemployment 3.1% versus prior 3.1%. Scored only here; employment counts are separate.",
-          "evidenceIds": [
-            "CHF:unemployment"
-          ],
-          "eligible": true
-        },
-        {
-          "id": "gdp",
-          "label": "GDP",
-          "points": 0,
-          "reason": "Comparable GDP consensus unavailable.",
-          "evidenceIds": [
-            "CHF:gdp"
-          ],
-          "eligible": false
-        },
-        {
-          "id": "pmi",
-          "label": "PMI",
-          "points": 5,
-          "reason": "procure.ch manufacturing PMI: 55.3. Bands: <45, 45–<50, 50–55, >55. One series only.",
-          "evidenceIds": [
-            "CHF:pmi"
-          ],
-          "eligible": true
-        },
-        {
-          "id": "retail_sales",
-          "label": "Retail / household spending",
-          "points": 5,
-          "reason": "Spending surprise 1 pp; Real retail sales y/y %, calendar adjusted.",
-          "evidenceIds": [
-            "CHF:retail_sales"
-          ],
-          "eligible": true
-        },
-        {
-          "id": "risk",
-          "label": "Risk sentiment",
-          "points": 0,
-          "reason": "S&P 500 daily change -0.22%; VIX daily change 0.47%, as of 2026-10-07. Risk-on requires equities ≥+0.5% and VIX ≤−5%; risk-off requires equities ≤−0.5% and VIX ≥+5%. Otherwise mixed.",
-          "evidenceIds": [],
-          "eligible": true
-        }
-      ],
-      "rank": 5
-    },
-    {
-      "currency": "EUR",
-      "score": 58,
-      "bias": "Neutral",
-      "quality": "High",
-      "agreement": "Mixed",
-      "verifiedFactors": 9,
-      "totalFactors": 9,
-      "eligibleComponents": 7,
-      "provisional": false,
-      "factors": [
-        {
-          "id": "central_bank",
-          "label": "Central-bank guidance",
-          "points": 0,
-          "reason": "Lane supports prior tightening but says contained underlying inflation, higher yields and demand destruction may limit further adjustment. Mixed (0 points) is analyst interpretation of this individual speech, not a collective ECB commitment. Rate decision is context within this single policy adjustment.",
-          "evidenceIds": [
-            "EUR:central_bank",
-            "EUR:rate_decision"
-          ],
-          "eligible": true
-        },
-        {
-          "id": "inflation",
-          "label": "Inflation",
-          "points": 5,
-          "reason": "Headline surprise 0.2 pp (40%); core surprise 0 pp (60%). Weighted component rounded to the nearest 5 points.",
-          "evidenceIds": [
-            "EUR:headline_cpi",
-            "EUR:core_cpi"
-          ],
-          "eligible": true
-        },
-        {
-          "id": "employment",
-          "label": "Employment",
-          "points": 0,
-          "reason": "No comparable employment consensus; no adjustment.",
-          "evidenceIds": [
-            "EUR:employment"
-          ],
-          "eligible": false
-        },
-        {
-          "id": "unemployment",
-          "label": "Unemployment",
-          "points": 0,
-          "reason": "Unemployment 6.4% versus prior 6.4%. Scored only here; employment counts are separate.",
-          "evidenceIds": [
-            "EUR:unemployment"
-          ],
-          "eligible": true
-        },
-        {
-          "id": "gdp",
-          "label": "GDP",
-          "points": 5,
-          "reason": "GDP surprise 0.2 pp on the configured growth basis. Thresholds 0.05 / 0.3 pp.",
-          "evidenceIds": [
-            "EUR:gdp"
-          ],
-          "eligible": true
-        },
-        {
-          "id": "pmi",
-          "label": "PMI",
-          "points": 3,
-          "reason": "S&P Global eurozone composite output PMI, latest flash or final: 53.1. Bands: <45, 45–<50, 50–55, >55. One series only.",
-          "evidenceIds": [
-            "EUR:pmi"
-          ],
-          "eligible": true
-        },
-        {
-          "id": "retail_sales",
-          "label": "Retail / household spending",
-          "points": -5,
-          "reason": "Spending surprise -0.1 pp; Euro-area retail trade volume m/m %, seasonally adjusted.",
-          "evidenceIds": [
-            "EUR:retail_sales"
-          ],
-          "eligible": true
-        },
-        {
-          "id": "risk",
-          "label": "Risk sentiment",
-          "points": 0,
-          "reason": "S&P 500 daily change -0.22%; VIX daily change 0.47%, as of 2026-10-07. Risk-on requires equities ≥+0.5% and VIX ≤−5%; risk-off requires equities ≤−0.5% and VIX ≥+5%. Otherwise mixed.",
-          "evidenceIds": [],
-          "eligible": true
-        }
-      ],
-      "rank": 6
-    },
-    {
-      "currency": "JPY",
-      "score": 53,
-      "bias": "Neutral",
-      "quality": "Medium",
-      "agreement": "Mixed",
-      "verifiedFactors": 8,
-      "totalFactors": 9,
-      "eligibleComponents": 5,
-      "provisional": false,
-      "factors": [
-        {
-          "id": "central_bank",
-          "label": "Central-bank guidance",
-          "points": 10,
-          "reason": "Analyst inference: moderately hawkish. October 1 summary supports conditional further tightening, with disagreement about pace and weak domestic demand. Uchida's October 5 AI speech was read; it discusses uncertain macro effects rather than a new rate-path commitment, so October 1 remains the latest verified explicit policy guidance. Rate decision is context within this single policy adjustment.",
-          "evidenceIds": [
-            "JPY:central_bank",
-            "JPY:rate_decision"
-          ],
-          "eligible": true
-        },
-        {
-          "id": "inflation",
-          "label": "Inflation",
-          "points": -5,
-          "reason": "Only core has comparable consensus: surprise -0.1 pp. Use the available component once; evidence coverage reduced.",
-          "evidenceIds": [
-            "JPY:headline_cpi",
-            "JPY:core_cpi"
-          ],
-          "eligible": false
-        },
-        {
-          "id": "employment",
-          "label": "Employment",
-          "points": 0,
-          "reason": "No comparable employment consensus; no adjustment.",
-          "evidenceIds": [
-            "JPY:employment"
-          ],
-          "eligible": false
-        },
-        {
-          "id": "unemployment",
-          "label": "Unemployment",
-          "points": -5,
-          "reason": "Unemployment 2.5% versus prior 2.4%. Scored only here; employment counts are separate.",
-          "evidenceIds": [
-            "JPY:unemployment"
-          ],
-          "eligible": true
-        },
-        {
-          "id": "gdp",
-          "label": "GDP",
-          "points": 0,
-          "reason": "GDP surprise 0 pp on the configured growth basis. Thresholds 0.05 / 0.3 pp.",
-          "evidenceIds": [
-            "JPY:gdp"
-          ],
-          "eligible": true
-        },
-        {
-          "id": "pmi",
-          "label": "PMI",
-          "points": 3,
-          "reason": "S&P Global Japan composite output PMI, latest flash or final: 52.3. Bands: <45, 45–<50, 50–55, >55. One series only.",
-          "evidenceIds": [
-            "JPY:pmi"
-          ],
-          "eligible": true
-        },
-        {
-          "id": "retail_sales",
-          "label": "Retail / household spending",
-          "points": 0,
-          "reason": "Comparable spending consensus unavailable.",
-          "evidenceIds": [
-            "JPY:retail_sales"
-          ],
-          "eligible": false
-        },
-        {
-          "id": "risk",
-          "label": "Risk sentiment",
-          "points": 0,
-          "reason": "S&P 500 daily change -0.22%; VIX daily change 0.47%, as of 2026-10-07. Risk-on requires equities ≥+0.5% and VIX ≤−5%; risk-off requires equities ≤−0.5% and VIX ≥+5%. Otherwise mixed.",
-          "evidenceIds": [],
-          "eligible": true
-        }
-      ],
-      "rank": 7
-    },
-    {
-      "currency": "CAD",
-      "score": 30,
-      "bias": "Slightly Bearish",
-      "quality": "High",
-      "agreement": "Strong",
-      "verifiedFactors": 9,
-      "totalFactors": 9,
-      "eligibleComponents": 7,
-      "provisional": false,
-      "factors": [
-        {
-          "id": "central_bank",
-          "label": "Central-bank guidance",
-          "points": 0,
-          "reason": "Rogers discusses housing and the broad trade-offs of rate increases and cuts. Mixed is analyst interpretation; the speech supplies no new rate-path commitment. September 2 decision remains the latest verified rate decision. Rate decision is context within this single policy adjustment.",
-          "evidenceIds": [
-            "CAD:central_bank",
-            "CAD:rate_decision"
-          ],
-          "eligible": true
-        },
-        {
-          "id": "inflation",
-          "label": "Inflation",
-          "points": 0,
-          "reason": "Headline surprise 0 pp (40%); core surprise 0 pp (60%). Weighted component rounded to the nearest 5 points.",
-          "evidenceIds": [
-            "CAD:headline_cpi",
-            "CAD:core_cpi"
-          ],
-          "eligible": true
-        },
-        {
-          "id": "employment",
-          "label": "Employment",
-          "points": -10,
-          "reason": "Employment surprise -56.7 thousand persons; thresholds 5 / 25. SA employment thousands. Primary headline rounds change to −42k; provider retains −41.7k.",
-          "evidenceIds": [
-            "CAD:employment"
-          ],
-          "eligible": true
-        },
-        {
-          "id": "unemployment",
-          "label": "Unemployment",
-          "points": 0,
-          "reason": "Unemployment 6.4% versus prior 6.4%. Scored only here; employment counts are separate.",
-          "evidenceIds": [
-            "CAD:unemployment"
-          ],
-          "eligible": true
-        },
-        {
-          "id": "gdp",
-          "label": "GDP",
-          "points": -5,
-          "reason": "GDP surprise -0.1 pp on the configured growth basis. Thresholds 0.1 / 0.5 pp.",
-          "evidenceIds": [
-            "CAD:gdp"
-          ],
-          "eligible": true
-        },
-        {
-          "id": "pmi",
-          "label": "PMI",
-          "points": -5,
-          "reason": "S&P Global Canada composite output PMI; if unavailable mark missing, do not substitute Ivey: 48.7. Bands: <45, 45–<50, 50–55, >55. One series only.",
-          "evidenceIds": [
-            "CAD:pmi"
-          ],
-          "eligible": true
-        },
-        {
-          "id": "retail_sales",
-          "label": "Retail / household spending",
-          "points": 0,
-          "reason": "Comparable spending consensus unavailable.",
-          "evidenceIds": [
-            "CAD:retail_sales"
-          ],
-          "eligible": false
-        },
-        {
-          "id": "risk",
-          "label": "Risk sentiment",
-          "points": 0,
-          "reason": "S&P 500 daily change -0.22%; VIX daily change 0.47%, as of 2026-10-07. Risk-on requires equities ≥+0.5% and VIX ≤−5%; risk-off requires equities ≤−0.5% and VIX ≥+5%. Otherwise mixed.",
-          "evidenceIds": [],
-          "eligible": true
-        }
-      ],
-      "rank": 8
-    }
-  ],
-  "pairs": [
-    {
-      "pair": "USDCAD",
-      "base": "USD",
-      "quote": "CAD",
-      "difference": 45,
-      "edge": 45,
-      "edgeClass": "Strong Edge",
-      "direction": "LONG",
-      "eligible": true,
-      "quality": "High"
-    },
-    {
-      "pair": "GBPCAD",
-      "base": "GBP",
-      "quote": "CAD",
-      "difference": 43,
-      "edge": 43,
-      "edgeClass": "Strong Edge",
-      "direction": "LONG",
-      "eligible": true,
-      "quality": "High"
-    },
-    {
-      "pair": "NZDCAD",
-      "base": "NZD",
-      "quote": "CAD",
-      "difference": 43,
-      "edge": 43,
-      "edgeClass": "Strong Edge",
-      "direction": "LONG",
-      "eligible": true,
-      "quality": "High"
-    },
-    {
-      "pair": "AUDCAD",
-      "base": "AUD",
-      "quote": "CAD",
-      "difference": 38,
-      "edge": 38,
-      "edgeClass": "Tradable Edge",
-      "direction": "LONG",
-      "eligible": true,
-      "quality": "High"
-    },
-    {
-      "pair": "CADCHF",
-      "base": "CAD",
-      "quote": "CHF",
-      "difference": -30,
-      "edge": 30,
-      "edgeClass": "Tradable Edge",
-      "direction": "SHORT",
-      "eligible": true,
-      "quality": "Medium"
-    },
-    {
-      "pair": "EURCAD",
-      "base": "EUR",
-      "quote": "CAD",
-      "difference": 28,
-      "edge": 28,
-      "edgeClass": "Tradable Edge",
-      "direction": "LONG",
-      "eligible": true,
-      "quality": "High"
-    },
-    {
-      "pair": "CADJPY",
-      "base": "CAD",
-      "quote": "JPY",
-      "difference": -23,
-      "edge": 23,
-      "edgeClass": "Tradable Edge",
-      "direction": "SHORT",
-      "eligible": true,
-      "quality": "Medium"
-    },
-    {
-      "pair": "USDJPY",
-      "base": "USD",
-      "quote": "JPY",
-      "difference": 22,
-      "edge": 22,
-      "edgeClass": "Tradable Edge",
-      "direction": "LONG",
-      "eligible": true,
-      "quality": "Medium"
-    },
-    {
-      "pair": "GBPJPY",
-      "base": "GBP",
-      "quote": "JPY",
-      "difference": 20,
-      "edge": 20,
-      "edgeClass": "Weak Edge",
-      "direction": "LONG",
-      "eligible": true,
-      "quality": "Medium"
-    },
-    {
-      "pair": "NZDJPY",
-      "base": "NZD",
-      "quote": "JPY",
-      "difference": 20,
-      "edge": 20,
-      "edgeClass": "Weak Edge",
-      "direction": "LONG",
-      "eligible": true,
-      "quality": "Medium"
-    },
-    {
-      "pair": "EURUSD",
-      "base": "EUR",
-      "quote": "USD",
-      "difference": -17,
-      "edge": 17,
-      "edgeClass": "Weak Edge",
-      "direction": "SHORT",
-      "eligible": true,
-      "quality": "High"
-    },
-    {
-      "pair": "AUDJPY",
-      "base": "AUD",
-      "quote": "JPY",
-      "difference": 15,
-      "edge": 15,
-      "edgeClass": "Weak Edge",
-      "direction": "LONG",
-      "eligible": true,
-      "quality": "Medium"
-    },
-    {
-      "pair": "EURGBP",
-      "base": "EUR",
-      "quote": "GBP",
-      "difference": -15,
-      "edge": 15,
-      "edgeClass": "Weak Edge",
-      "direction": "SHORT",
-      "eligible": true,
-      "quality": "High"
-    },
-    {
-      "pair": "EURNZD",
-      "base": "EUR",
-      "quote": "NZD",
-      "difference": -15,
-      "edge": 15,
-      "edgeClass": "Weak Edge",
-      "direction": "SHORT",
-      "eligible": true,
-      "quality": "High"
-    },
-    {
-      "pair": "USDCHF",
-      "base": "USD",
-      "quote": "CHF",
-      "difference": 15,
-      "edge": 15,
-      "edgeClass": "Weak Edge",
-      "direction": "LONG",
-      "eligible": true,
-      "quality": "Medium"
-    },
-    {
-      "pair": "GBPCHF",
-      "base": "GBP",
-      "quote": "CHF",
-      "difference": 13,
-      "edge": 13,
-      "edgeClass": "Weak Edge",
-      "direction": "LONG",
-      "eligible": true,
-      "quality": "Medium"
-    },
-    {
-      "pair": "NZDCHF",
-      "base": "NZD",
-      "quote": "CHF",
-      "difference": 13,
-      "edge": 13,
-      "edgeClass": "Weak Edge",
-      "direction": "LONG",
-      "eligible": true,
-      "quality": "Medium"
-    },
-    {
-      "pair": "EURAUD",
-      "base": "EUR",
-      "quote": "AUD",
-      "difference": -10,
-      "edge": 10,
-      "edgeClass": "No Edge",
-      "direction": "NEUTRAL",
-      "eligible": true,
-      "quality": "High"
-    },
-    {
-      "pair": "AUDCHF",
-      "base": "AUD",
-      "quote": "CHF",
-      "difference": 8,
-      "edge": 8,
-      "edgeClass": "No Edge",
-      "direction": "NEUTRAL",
-      "eligible": true,
-      "quality": "Medium"
-    },
-    {
-      "pair": "AUDUSD",
-      "base": "AUD",
-      "quote": "USD",
-      "difference": -7,
-      "edge": 7,
-      "edgeClass": "No Edge",
-      "direction": "NEUTRAL",
-      "eligible": true,
-      "quality": "High"
-    },
-    {
-      "pair": "CHFJPY",
-      "base": "CHF",
-      "quote": "JPY",
-      "difference": 7,
-      "edge": 7,
-      "edgeClass": "No Edge",
-      "direction": "NEUTRAL",
-      "eligible": true,
-      "quality": "Medium"
-    },
-    {
-      "pair": "AUDNZD",
-      "base": "AUD",
-      "quote": "NZD",
-      "difference": -5,
-      "edge": 5,
-      "edgeClass": "No Edge",
-      "direction": "NEUTRAL",
-      "eligible": true,
-      "quality": "High"
-    },
-    {
-      "pair": "EURJPY",
-      "base": "EUR",
-      "quote": "JPY",
-      "difference": 5,
-      "edge": 5,
-      "edgeClass": "No Edge",
-      "direction": "NEUTRAL",
-      "eligible": true,
-      "quality": "Medium"
-    },
-    {
-      "pair": "GBPAUD",
-      "base": "GBP",
-      "quote": "AUD",
-      "difference": 5,
-      "edge": 5,
-      "edgeClass": "No Edge",
-      "direction": "NEUTRAL",
-      "eligible": true,
-      "quality": "High"
-    },
-    {
-      "pair": "EURCHF",
-      "base": "EUR",
-      "quote": "CHF",
-      "difference": -2,
-      "edge": 2,
-      "edgeClass": "No Edge",
-      "direction": "NEUTRAL",
-      "eligible": true,
-      "quality": "Medium"
-    },
-    {
-      "pair": "GBPUSD",
-      "base": "GBP",
-      "quote": "USD",
-      "difference": -2,
-      "edge": 2,
-      "edgeClass": "No Edge",
-      "direction": "NEUTRAL",
-      "eligible": true,
-      "quality": "High"
-    },
-    {
-      "pair": "NZDUSD",
-      "base": "NZD",
-      "quote": "USD",
-      "difference": -2,
-      "edge": 2,
-      "edgeClass": "No Edge",
-      "direction": "NEUTRAL",
-      "eligible": true,
-      "quality": "High"
-    },
-    {
-      "pair": "GBPNZD",
-      "base": "GBP",
-      "quote": "NZD",
-      "difference": 0,
-      "edge": 0,
-      "edgeClass": "No Edge",
-      "direction": "NEUTRAL",
-      "eligible": true,
-      "quality": "High"
-    }
-  ],
-  "focus": {
-    "pair": "GBPUSD",
-    "base": "GBP",
-    "quote": "USD",
-    "difference": -2,
-    "edge": 2,
-    "edgeClass": "No Edge",
-    "direction": "NEUTRAL",
-    "eligible": true,
-    "quality": "High"
-  },
-  "summary": [
-    "USD leads at 75/100 under the fundamental model.",
-    "CAD ranks lowest at 30/100.",
-    "Largest eligible separation: USDCAD, 45 points (Strong Edge); favor USD.",
-    "GBPUSD is neutral; wait for clearer fundamental separation.",
-    "Next verified event: GBP Andrew Bailey speech — Istanbul Economic Forum, 2026-10-08 at 12:15 UTC. Potential policy communication; individual remarks do not replace an MPC decision."
-  ],
   "evidence": [
     {
       "currency": "USD",
@@ -1109,9 +19,7 @@
       "comparisonMatched": false,
       "searchQuery": "October 8 afternoon source consultation: https://www.federalreserve.gov/newsevents/speech/waller20261008a.htm; USD central_bank release and exact configured definition checked.",
       "series": "Latest verified policy communication",
-      "unit": "qualitative",
-      "id": "USD:central_bank",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "qualitative"
     },
     {
       "currency": "USD",
@@ -1132,9 +40,7 @@
       "comparisonMatched": false,
       "searchQuery": "October 8 afternoon source consultation: https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm; USD rate_decision release and exact configured definition checked.",
       "series": "Policy rate; USD target-range upper bound",
-      "unit": "%",
-      "id": "USD:rate_decision",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "%"
     },
     {
       "currency": "EUR",
@@ -1155,9 +61,7 @@
       "comparisonMatched": false,
       "searchQuery": "October 8 afternoon source consultation: https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp261005~1d8d998ef4.en.html; EUR central_bank release and exact configured definition checked.",
       "series": "Latest verified policy communication",
-      "unit": "qualitative",
-      "id": "EUR:central_bank",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "qualitative"
     },
     {
       "currency": "EUR",
@@ -1178,9 +82,7 @@
       "comparisonMatched": false,
       "searchQuery": "October 8 afternoon source consultation: https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260910~314e508016.en.html; EUR rate_decision release and exact configured definition checked.",
       "series": "Policy rate; USD target-range upper bound",
-      "unit": "%",
-      "id": "EUR:rate_decision",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "%"
     },
     {
       "currency": "GBP",
@@ -1201,9 +103,7 @@
       "comparisonMatched": false,
       "searchQuery": "October 8 afternoon source consultation: https://www.investing.com/news/economy-news/bank-of-englands-mann-says-high-inflation-has-become-embedded-in-uk-4933692; GBP central_bank release and exact configured definition checked.",
       "series": "Latest verified policy communication",
-      "unit": "qualitative",
-      "id": "GBP:central_bank",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "qualitative"
     },
     {
       "currency": "GBP",
@@ -1224,9 +124,7 @@
       "comparisonMatched": false,
       "searchQuery": "October 8 afternoon source consultation: https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026; GBP rate_decision release and exact configured definition checked.",
       "series": "Policy rate; USD target-range upper bound",
-      "unit": "%",
-      "id": "GBP:rate_decision",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "%"
     },
     {
       "currency": "JPY",
@@ -1247,9 +145,7 @@
       "comparisonMatched": false,
       "searchQuery": "October 8 afternoon source consultation: https://www.boj.or.jp/en/mopo/mpmsche_minu/opinion_2026/opi260918.pdf; JPY central_bank release and exact configured definition checked.",
       "series": "Latest verified policy communication",
-      "unit": "qualitative",
-      "id": "JPY:central_bank",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "qualitative"
     },
     {
       "currency": "JPY",
@@ -1270,9 +166,7 @@
       "comparisonMatched": false,
       "searchQuery": "October 8 afternoon source consultation: https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260918a.pdf; JPY rate_decision release and exact configured definition checked.",
       "series": "Policy rate; USD target-range upper bound",
-      "unit": "%",
-      "id": "JPY:rate_decision",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "%"
     },
     {
       "currency": "CHF",
@@ -1293,9 +187,7 @@
       "comparisonMatched": false,
       "searchQuery": "October 8 afternoon source consultation: https://www.snb.ch/en/publications/communication/press-releases-restricted/pre_20260924; CHF central_bank release and exact configured definition checked.",
       "series": "Latest verified policy communication",
-      "unit": "qualitative",
-      "id": "CHF:central_bank",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "qualitative"
     },
     {
       "currency": "CHF",
@@ -1316,9 +208,7 @@
       "comparisonMatched": false,
       "searchQuery": "October 8 afternoon source consultation: https://www.snb.ch/en/publications/communication/press-releases-restricted/pre_20260924; CHF rate_decision release and exact configured definition checked.",
       "series": "Policy rate; USD target-range upper bound",
-      "unit": "%",
-      "id": "CHF:rate_decision",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "%"
     },
     {
       "currency": "AUD",
@@ -1339,9 +229,7 @@
       "comparisonMatched": false,
       "searchQuery": "October 8 afternoon source consultation: https://www.rba.gov.au/media-releases/2026/mr-26-27.html; AUD central_bank release and exact configured definition checked.",
       "series": "Latest verified policy communication",
-      "unit": "qualitative",
-      "id": "AUD:central_bank",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "qualitative"
     },
     {
       "currency": "AUD",
@@ -1362,9 +250,7 @@
       "comparisonMatched": false,
       "searchQuery": "October 8 afternoon source consultation: https://www.rba.gov.au/media-releases/2026/mr-26-27.html; AUD rate_decision release and exact configured definition checked.",
       "series": "Policy rate; USD target-range upper bound",
-      "unit": "%",
-      "id": "AUD:rate_decision",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "%"
     },
     {
       "currency": "NZD",
@@ -1385,9 +271,7 @@
       "comparisonMatched": false,
       "searchQuery": "October 8 afternoon source consultation: https://www.rbnz.govt.nz/news-and-events/news/2026/09/ocr-increased-by-25-basis-points-to-2-75; NZD central_bank release and exact configured definition checked.",
       "series": "Latest verified policy communication",
-      "unit": "qualitative",
-      "id": "NZD:central_bank",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "qualitative"
     },
     {
       "currency": "NZD",
@@ -1408,9 +292,7 @@
       "comparisonMatched": false,
       "searchQuery": "October 8 afternoon source consultation: https://www.rbnz.govt.nz/news-and-events/news/2026/09/ocr-increased-by-25-basis-points-to-2-75; NZD rate_decision release and exact configured definition checked.",
       "series": "Policy rate; USD target-range upper bound",
-      "unit": "%",
-      "id": "NZD:rate_decision",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "%"
     },
     {
       "currency": "CAD",
@@ -1431,9 +313,7 @@
       "comparisonMatched": false,
       "searchQuery": "October 8 afternoon source consultation: https://www.bankofcanada.ca/2026/10/canadas-housing-affordability-dilemma/; CAD central_bank release and exact configured definition checked.",
       "series": "Latest verified policy communication",
-      "unit": "qualitative",
-      "id": "CAD:central_bank",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "qualitative"
     },
     {
       "currency": "CAD",
@@ -1454,9 +334,7 @@
       "comparisonMatched": false,
       "searchQuery": "October 8 afternoon source consultation: https://www.bankofcanada.ca/2026/09/fad-press-release-2026-09-02/; CAD rate_decision release and exact configured definition checked.",
       "series": "Policy rate; USD target-range upper bound",
-      "unit": "%",
-      "id": "CAD:rate_decision",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "%"
     },
     {
       "currency": "USD",
@@ -1477,9 +355,7 @@
       "comparisonMatched": true,
       "searchQuery": "October 8 afternoon source consultation: https://www.bls.gov/news.release/cpi.htm; USD headline_cpi release and exact configured definition checked.",
       "series": "CPI all items, seasonally adjusted m/m %",
-      "unit": "%",
-      "id": "USD:headline_cpi",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "%"
     },
     {
       "currency": "USD",
@@ -1500,9 +376,7 @@
       "comparisonMatched": true,
       "searchQuery": "October 8 afternoon source consultation: https://www.bls.gov/news.release/cpi.htm; USD core_cpi release and exact configured definition checked.",
       "series": "CPI excluding food and energy, seasonally adjusted m/m %",
-      "unit": "%",
-      "id": "USD:core_cpi",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "%"
     },
     {
       "currency": "USD",
@@ -1523,9 +397,7 @@
       "comparisonMatched": true,
       "searchQuery": "October 8 afternoon source consultation: https://www.bls.gov/news.release/archives/empsit_10022026.htm; USD employment release and exact configured definition checked.",
       "series": "Nonfarm payroll change, thousands, seasonally adjusted",
-      "unit": "thousand persons",
-      "id": "USD:employment",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "thousand persons"
     },
     {
       "currency": "USD",
@@ -1546,9 +418,7 @@
       "comparisonMatched": false,
       "searchQuery": "October 8 afternoon source consultation: https://www.bls.gov/news.release/archives/empsit_10022026.htm; USD unemployment release and exact configured definition checked.",
       "series": "U-3 unemployment rate, %, seasonally adjusted",
-      "unit": "%",
-      "id": "USD:unemployment",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "%"
     },
     {
       "currency": "USD",
@@ -1569,9 +439,7 @@
       "comparisonMatched": true,
       "searchQuery": "October 8 afternoon source consultation: https://www.bea.gov/data/gdp/gross-domestic-product; USD gdp release and exact configured definition checked.",
       "series": "Real GDP q/q annualized %, seasonally adjusted",
-      "unit": "%",
-      "id": "USD:gdp",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "%"
     },
     {
       "currency": "USD",
@@ -1592,9 +460,7 @@
       "comparisonMatched": false,
       "searchQuery": "October 8 afternoon source consultation: https://tradingeconomics.com/united-states/composite-pmi; USD pmi release and exact configured definition checked.",
       "series": "S&P Global composite output PMI, latest flash or final",
-      "unit": "index points",
-      "id": "USD:pmi",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "index points"
     },
     {
       "currency": "USD",
@@ -1615,9 +481,7 @@
       "comparisonMatched": true,
       "searchQuery": "October 8 afternoon source consultation: https://www.census.gov/retail/sales.html; USD retail_sales release and exact configured definition checked.",
       "series": "Total retail and food services sales, seasonally adjusted m/m %",
-      "unit": "%",
-      "id": "USD:retail_sales",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "%"
     },
     {
       "currency": "EUR",
@@ -1638,9 +502,7 @@
       "comparisonMatched": true,
       "searchQuery": "October 8 afternoon source consultation: https://ec.europa.eu/eurostat/en/web/products-euro-indicators/w/2-02102026-ap; EUR headline_cpi release and exact configured definition checked.",
       "series": "Euro-area all-items HICP y/y %",
-      "unit": "%",
-      "id": "EUR:headline_cpi",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "%"
     },
     {
       "currency": "EUR",
@@ -1661,9 +523,7 @@
       "comparisonMatched": true,
       "searchQuery": "October 8 afternoon source consultation: https://ec.europa.eu/eurostat/en/web/products-euro-indicators/w/2-02102026-ap; EUR core_cpi release and exact configured definition checked.",
       "series": "Euro-area HICP excluding energy, food, alcohol and tobacco y/y %",
-      "unit": "%",
-      "id": "EUR:core_cpi",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "%"
     },
     {
       "currency": "EUR",
@@ -1684,9 +544,7 @@
       "comparisonMatched": false,
       "searchQuery": "October 8 afternoon source consultation: https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-07092026-ap; EUR employment release and exact configured definition checked.",
       "series": "Euro-area employment q/q %, seasonally adjusted",
-      "unit": "%",
-      "id": "EUR:employment",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "%"
     },
     {
       "currency": "EUR",
@@ -1707,9 +565,7 @@
       "comparisonMatched": false,
       "searchQuery": "October 8 afternoon source consultation: https://ec.europa.eu/eurostat/en/web/products-euro-indicators/w/3-01102026-ap; EUR unemployment release and exact configured definition checked.",
       "series": "Euro-area unemployment rate %, seasonally adjusted",
-      "unit": "%",
-      "id": "EUR:unemployment",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "%"
     },
     {
       "currency": "EUR",
@@ -1730,9 +586,7 @@
       "comparisonMatched": true,
       "searchQuery": "October 8 afternoon source consultation: https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-07092026-ap; EUR gdp release and exact configured definition checked.",
       "series": "Euro-area real GDP q/q %, seasonally adjusted",
-      "unit": "%",
-      "id": "EUR:gdp",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "%"
     },
     {
       "currency": "EUR",
@@ -1753,9 +607,7 @@
       "comparisonMatched": true,
       "searchQuery": "October 8 afternoon source consultation: https://tradingeconomics.com/euro-area/composite-pmi; EUR pmi release and exact configured definition checked.",
       "series": "S&P Global eurozone composite output PMI, latest flash or final",
-      "unit": "index points",
-      "id": "EUR:pmi",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "index points"
     },
     {
       "currency": "EUR",
@@ -1776,9 +628,7 @@
       "comparisonMatched": true,
       "searchQuery": "October 8 afternoon source consultation: https://tradingeconomics.com/euro-area/retail-sales; EUR retail_sales release and exact configured definition checked.",
       "series": "Euro-area retail trade volume m/m %, seasonally adjusted",
-      "unit": "%",
-      "id": "EUR:retail_sales",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "%"
     },
     {
       "currency": "GBP",
@@ -1799,9 +649,7 @@
       "comparisonMatched": true,
       "searchQuery": "October 8 afternoon source consultation: https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/august2026; GBP headline_cpi release and exact configured definition checked.",
       "series": "CPI y/y %",
-      "unit": "%",
-      "id": "GBP:headline_cpi",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "%"
     },
     {
       "currency": "GBP",
@@ -1822,9 +670,7 @@
       "comparisonMatched": true,
       "searchQuery": "October 8 afternoon source consultation: https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/august2026; GBP core_cpi release and exact configured definition checked.",
       "series": "CPI excluding energy, food, alcohol and tobacco y/y %",
-      "unit": "%",
-      "id": "GBP:core_cpi",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "%"
     },
     {
       "currency": "GBP",
@@ -1845,9 +691,7 @@
       "comparisonMatched": false,
       "searchQuery": "October 8 afternoon source consultation: https://tradingeconomics.com/united-kingdom/employment-change; GBP employment release and exact configured definition checked.",
       "series": "Employment change over three months, thousands, seasonally adjusted",
-      "unit": "thousand persons",
-      "id": "GBP:employment",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "thousand persons"
     },
     {
       "currency": "GBP",
@@ -1868,9 +712,7 @@
       "comparisonMatched": false,
       "searchQuery": "October 8 afternoon source consultation: https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/uklabourmarket/latest; GBP unemployment release and exact configured definition checked.",
       "series": "ILO unemployment rate %, seasonally adjusted",
-      "unit": "%",
-      "id": "GBP:unemployment",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "%"
     },
     {
       "currency": "GBP",
@@ -1891,9 +733,7 @@
       "comparisonMatched": true,
       "searchQuery": "October 8 afternoon source consultation: https://tradingeconomics.com/united-kingdom/gdp-growth; GBP gdp release and exact configured definition checked.",
       "series": "Quarterly real GDP q/q %, seasonally adjusted",
-      "unit": "%",
-      "id": "GBP:gdp",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "%"
     },
     {
       "currency": "GBP",
@@ -1914,9 +754,7 @@
       "comparisonMatched": false,
       "searchQuery": "October 8 afternoon source consultation: https://tradingeconomics.com/united-kingdom/composite-pmi; GBP pmi release and exact configured definition checked.",
       "series": "S&P Global UK composite output PMI, latest flash or final",
-      "unit": "index points",
-      "id": "GBP:pmi",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "index points"
     },
     {
       "currency": "GBP",
@@ -1937,9 +775,7 @@
       "comparisonMatched": true,
       "searchQuery": "October 8 afternoon source consultation: https://www.ons.gov.uk/businessindustryandtrade/retailindustry/bulletins/retailsales/august2026; GBP retail_sales release and exact configured definition checked.",
       "series": "Retail sales volume including automotive fuel m/m %, seasonally adjusted",
-      "unit": "%",
-      "id": "GBP:retail_sales",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "%"
     },
     {
       "currency": "JPY",
@@ -1960,9 +796,7 @@
       "comparisonMatched": false,
       "searchQuery": "October 8 afternoon source consultation: https://tradingeconomics.com/japan/inflation-cpi; JPY headline_cpi release and exact configured definition checked.",
       "series": "National CPI all items y/y %",
-      "unit": "%",
-      "id": "JPY:headline_cpi",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "%"
     },
     {
       "currency": "JPY",
@@ -1983,9 +817,7 @@
       "comparisonMatched": true,
       "searchQuery": "October 8 afternoon source consultation: https://tradingeconomics.com/japan/core-inflation-rate; JPY core_cpi release and exact configured definition checked.",
       "series": "National CPI excluding fresh food y/y %; do not substitute Tokyo CPI",
-      "unit": "%",
-      "id": "JPY:core_cpi",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "%"
     },
     {
       "currency": "JPY",
@@ -2006,9 +838,7 @@
       "comparisonMatched": false,
       "searchQuery": "October 8 afternoon source consultation: https://tradingeconomics.com/japan/employed-persons; JPY employment release and exact configured definition checked.",
       "series": "Employment change m/m, thousands, seasonally adjusted",
-      "unit": "thousand persons",
-      "id": "JPY:employment",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "thousand persons"
     },
     {
       "currency": "JPY",
@@ -2029,9 +859,7 @@
       "comparisonMatched": true,
       "searchQuery": "October 8 afternoon source consultation: https://tradingeconomics.com/japan/unemployment-rate; JPY unemployment release and exact configured definition checked.",
       "series": "Unemployment rate %, seasonally adjusted",
-      "unit": "%",
-      "id": "JPY:unemployment",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "%"
     },
     {
       "currency": "JPY",
@@ -2052,9 +880,7 @@
       "comparisonMatched": true,
       "searchQuery": "October 8 afternoon source consultation: https://www.esri.cao.go.jp/en/sna/data/sokuhou/files/2026/qe262_2/pdf/gaiyou2622_e.pdf; JPY gdp release and exact configured definition checked.",
       "series": "Real GDP q/q %, seasonally adjusted, NOT annualized",
-      "unit": "%",
-      "id": "JPY:gdp",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "%"
     },
     {
       "currency": "JPY",
@@ -2075,9 +901,7 @@
       "comparisonMatched": true,
       "searchQuery": "October 8 afternoon source consultation: https://tradingeconomics.com/japan/composite-pmi; JPY pmi release and exact configured definition checked.",
       "series": "S&P Global Japan composite output PMI, latest flash or final",
-      "unit": "index points",
-      "id": "JPY:pmi",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "index points"
     },
     {
       "currency": "JPY",
@@ -2098,9 +922,7 @@
       "comparisonMatched": false,
       "searchQuery": "October 8 afternoon source consultation: https://tradingeconomics.com/japan/retail-sales; JPY retail_sales release and exact configured definition checked.",
       "series": "Retail sales m/m %, seasonally adjusted",
-      "unit": "%",
-      "id": "JPY:retail_sales",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "%"
     },
     {
       "currency": "CHF",
@@ -2121,9 +943,7 @@
       "comparisonMatched": true,
       "searchQuery": "October 8 afternoon source consultation: https://tradingeconomics.com/switzerland/inflation-cpi; CHF headline_cpi release and exact configured definition checked.",
       "series": "CPI y/y %",
-      "unit": "%",
-      "id": "CHF:headline_cpi",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "%"
     },
     {
       "currency": "CHF",
@@ -2144,9 +964,7 @@
       "comparisonMatched": false,
       "searchQuery": "October 8 afternoon source consultation: https://tradingeconomics.com/switzerland/core-inflation-rate; CHF core_cpi release and exact configured definition checked.",
       "series": "FSO core inflation 1 y/y %",
-      "unit": "%",
-      "id": "CHF:core_cpi",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "%"
     },
     {
       "currency": "CHF",
@@ -2167,9 +985,7 @@
       "comparisonMatched": false,
       "searchQuery": "October 8 afternoon source consultation: https://tradingeconomics.com/switzerland/employment-change; CHF employment release and exact configured definition checked.",
       "series": "Total employment q/q %, same official definition for actual and consensus",
-      "unit": "%",
-      "id": "CHF:employment",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "%"
     },
     {
       "currency": "CHF",
@@ -2190,9 +1006,7 @@
       "comparisonMatched": false,
       "searchQuery": "October 8 afternoon source consultation: https://tradingeconomics.com/switzerland/unemployment-rate; CHF unemployment release and exact configured definition checked.",
       "series": "SECO registered unemployment rate %, seasonally adjusted",
-      "unit": "%",
-      "id": "CHF:unemployment",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "%"
     },
     {
       "currency": "CHF",
@@ -2213,9 +1027,7 @@
       "comparisonMatched": false,
       "searchQuery": "October 8 afternoon source consultation: https://www.seco.admin.ch/en/gross-domestic-product; CHF gdp release and exact configured definition checked.",
       "series": "Real GDP adjusted for sporting events q/q %, seasonally adjusted",
-      "unit": "%",
-      "id": "CHF:gdp",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "%"
     },
     {
       "currency": "CHF",
@@ -2236,9 +1048,7 @@
       "comparisonMatched": true,
       "searchQuery": "October 8 afternoon source consultation: https://tradingeconomics.com/switzerland/manufacturing-pmi; CHF pmi release and exact configured definition checked.",
       "series": "procure.ch manufacturing PMI",
-      "unit": "index points",
-      "id": "CHF:pmi",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "index points"
     },
     {
       "currency": "CHF",
@@ -2259,9 +1069,7 @@
       "comparisonMatched": true,
       "searchQuery": "October 8 afternoon source consultation: https://tradingeconomics.com/switzerland/retail-sales-annual; CHF retail_sales release and exact configured definition checked.",
       "series": "Real retail sales y/y %, calendar adjusted",
-      "unit": "%",
-      "id": "CHF:retail_sales",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "%"
     },
     {
       "currency": "AUD",
@@ -2282,9 +1090,7 @@
       "comparisonMatched": true,
       "searchQuery": "October 8 afternoon source consultation: https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/consumer-price-index-australia/aug-2026; AUD headline_cpi release and exact configured definition checked.",
       "series": "Monthly CPI all groups y/y %",
-      "unit": "%",
-      "id": "AUD:headline_cpi",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "%"
     },
     {
       "currency": "AUD",
@@ -2305,9 +1111,7 @@
       "comparisonMatched": true,
       "searchQuery": "October 8 afternoon source consultation: https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/consumer-price-index-australia/aug-2026; AUD core_cpi release and exact configured definition checked.",
       "series": "Monthly trimmed mean inflation y/y %",
-      "unit": "%",
-      "id": "AUD:core_cpi",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "%"
     },
     {
       "currency": "AUD",
@@ -2328,9 +1132,7 @@
       "comparisonMatched": true,
       "searchQuery": "October 8 afternoon source consultation: https://www.abs.gov.au/statistics/labour/employment-and-unemployment/labour-force-australia/aug-2026; AUD employment release and exact configured definition checked.",
       "series": "Employment change, thousands, seasonally adjusted",
-      "unit": "thousand persons",
-      "id": "AUD:employment",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "thousand persons"
     },
     {
       "currency": "AUD",
@@ -2351,9 +1153,7 @@
       "comparisonMatched": false,
       "searchQuery": "October 8 afternoon source consultation: https://www.abs.gov.au/statistics/labour/employment-and-unemployment/labour-force-australia/aug-2026; AUD unemployment release and exact configured definition checked.",
       "series": "Unemployment rate %, seasonally adjusted",
-      "unit": "%",
-      "id": "AUD:unemployment",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "%"
     },
     {
       "currency": "AUD",
@@ -2374,9 +1174,7 @@
       "comparisonMatched": true,
       "searchQuery": "October 8 afternoon source consultation: https://www.abs.gov.au/media-centre/media-releases/australian-economy-grew-04-june-quarter; AUD gdp release and exact configured definition checked.",
       "series": "Real GDP q/q %, seasonally adjusted",
-      "unit": "%",
-      "id": "AUD:gdp",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "%"
     },
     {
       "currency": "AUD",
@@ -2397,9 +1195,7 @@
       "comparisonMatched": true,
       "searchQuery": "October 8 afternoon source consultation: https://tradingeconomics.com/australia/composite-pmi; AUD pmi release and exact configured definition checked.",
       "series": "S&P Global Australia composite output PMI, latest flash or final",
-      "unit": "index points",
-      "id": "AUD:pmi",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "index points"
     },
     {
       "currency": "AUD",
@@ -2420,9 +1216,7 @@
       "comparisonMatched": false,
       "searchQuery": "October 8 afternoon source consultation: https://www.abs.gov.au/statistics/economy/finance/monthly-household-spending-indicator/aug-2026; AUD retail_sales release and exact configured definition checked.",
       "series": "Monthly Household Spending Indicator m/m %, current prices, seasonally adjusted; replaces ceased Retail Trade",
-      "unit": "%",
-      "id": "AUD:retail_sales",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "%"
     },
     {
       "currency": "NZD",
@@ -2443,9 +1237,7 @@
       "comparisonMatched": true,
       "searchQuery": "October 8 afternoon source consultation: https://tradingeconomics.com/new-zealand/inflation-cpi; NZD headline_cpi release and exact configured definition checked.",
       "series": "Quarterly CPI y/y %",
-      "unit": "%",
-      "id": "NZD:headline_cpi",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "%"
     },
     {
       "currency": "NZD",
@@ -2466,9 +1258,7 @@
       "comparisonMatched": false,
       "searchQuery": "October 8 afternoon source consultation: https://www.rbnz.govt.nz/statistics/series/economic-indicators/prices; NZD core_cpi release and exact configured definition checked.",
       "series": "RBNZ sectoral factor model core inflation y/y %, named local core measure",
-      "unit": "%",
-      "id": "NZD:core_cpi",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "%"
     },
     {
       "currency": "NZD",
@@ -2489,9 +1279,7 @@
       "comparisonMatched": true,
       "searchQuery": "October 8 afternoon source consultation: https://tradingeconomics.com/new-zealand/employment-change; NZD employment release and exact configured definition checked.",
       "series": "Employment q/q %, seasonally adjusted",
-      "unit": "%",
-      "id": "NZD:employment",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "%"
     },
     {
       "currency": "NZD",
@@ -2512,9 +1300,7 @@
       "comparisonMatched": true,
       "searchQuery": "October 8 afternoon source consultation: https://tradingeconomics.com/new-zealand/unemployment-rate; NZD unemployment release and exact configured definition checked.",
       "series": "Unemployment rate %, seasonally adjusted",
-      "unit": "%",
-      "id": "NZD:unemployment",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "%"
     },
     {
       "currency": "NZD",
@@ -2535,9 +1321,7 @@
       "comparisonMatched": true,
       "searchQuery": "October 8 afternoon source consultation: https://tradingeconomics.com/new-zealand/gdp-growth; NZD gdp release and exact configured definition checked.",
       "series": "Production GDP q/q %, seasonally adjusted",
-      "unit": "%",
-      "id": "NZD:gdp",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "%"
     },
     {
       "currency": "NZD",
@@ -2558,9 +1342,7 @@
       "comparisonMatched": false,
       "searchQuery": "October 8 afternoon source consultation: https://tradingeconomics.com/new-zealand/manufacturing-pmi; NZD pmi release and exact configured definition checked.",
       "series": "BNZ-BusinessNZ manufacturing PMI",
-      "unit": "index points",
-      "id": "NZD:pmi",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "index points"
     },
     {
       "currency": "NZD",
@@ -2581,9 +1363,7 @@
       "comparisonMatched": true,
       "searchQuery": "October 8 afternoon source consultation: https://tradingeconomics.com/new-zealand/retail-sales; NZD retail_sales release and exact configured definition checked.",
       "series": "Quarterly retail sales volumes q/q %, seasonally adjusted",
-      "unit": "%",
-      "id": "NZD:retail_sales",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "%"
     },
     {
       "currency": "CAD",
@@ -2604,9 +1384,7 @@
       "comparisonMatched": true,
       "searchQuery": "October 8 afternoon source consultation: https://www150.statcan.gc.ca/n1/daily-quotidien/260914/dq260914a-eng.htm; CAD headline_cpi release and exact configured definition checked.",
       "series": "CPI all items y/y %",
-      "unit": "%",
-      "id": "CAD:headline_cpi",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "%"
     },
     {
       "currency": "CAD",
@@ -2627,9 +1405,7 @@
       "comparisonMatched": true,
       "searchQuery": "October 8 afternoon source consultation: https://www.bankofcanada.ca/rates/price-indexes/cpi/; CAD core_cpi release and exact configured definition checked.",
       "series": "CPI-trim y/y %, chosen core series; do not switch to CPI-median",
-      "unit": "%",
-      "id": "CAD:core_cpi",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "%"
     },
     {
       "currency": "CAD",
@@ -2650,9 +1426,7 @@
       "comparisonMatched": true,
       "searchQuery": "October 8 afternoon source consultation: https://tradingeconomics.com/canada/employment-change; CAD employment release and exact configured definition checked.",
       "series": "Employment change, thousands, seasonally adjusted",
-      "unit": "thousand persons",
-      "id": "CAD:employment",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "thousand persons"
     },
     {
       "currency": "CAD",
@@ -2673,9 +1447,7 @@
       "comparisonMatched": false,
       "searchQuery": "October 8 afternoon source consultation: https://tradingeconomics.com/canada/unemployment-rate; CAD unemployment release and exact configured definition checked.",
       "series": "Unemployment rate %, seasonally adjusted",
-      "unit": "%",
-      "id": "CAD:unemployment",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "%"
     },
     {
       "currency": "CAD",
@@ -2696,9 +1468,7 @@
       "comparisonMatched": true,
       "searchQuery": "October 8 afternoon source consultation: https://www150.statcan.gc.ca/n1/daily-quotidien/260828/t003a-eng.htm; CAD gdp release and exact configured definition checked.",
       "series": "Real GDP q/q annualized %, seasonally adjusted",
-      "unit": "%",
-      "id": "CAD:gdp",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "%"
     },
     {
       "currency": "CAD",
@@ -2719,9 +1489,7 @@
       "comparisonMatched": false,
       "searchQuery": "October 8 afternoon source consultation: https://tradingeconomics.com/canada/composite-pmi; CAD pmi release and exact configured definition checked.",
       "series": "S&P Global Canada composite output PMI; if unavailable mark missing, do not substitute Ivey",
-      "unit": "index points",
-      "id": "CAD:pmi",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "index points"
     },
     {
       "currency": "CAD",
@@ -2742,22 +1510,9 @@
       "comparisonMatched": false,
       "searchQuery": "October 8 afternoon source consultation: https://tradingeconomics.com/canada/retail-sales; CAD retail_sales release and exact configured definition checked.",
       "series": "Retail sales m/m %, seasonally adjusted, current prices",
-      "unit": "%",
-      "id": "CAD:retail_sales",
-      "retrievedAt": "2026-10-08T11:30:36Z"
+      "unit": "%"
     }
   ],
-  "risk": {
-    "equityChangePct": -0.22,
-    "vixChangePct": 0.47,
-    "asOf": "2026-10-07",
-    "equitySourceUrl": "https://www.investing.com/indices/us-spx-500-historical-data",
-    "vixSourceUrl": "https://www.investing.com/indices/volatility-s-p-500-historical-data?cid=1096487",
-    "notes": "Latest completed daily observation remains October 7 at the afternoon cutoff: S&P 500 -0.22% and VIX +0.47%. The October 8 session was incomplete, so no partial-day risk classification was substituted.",
-    "verified": true,
-    "regime": "mixed",
-    "reason": "S&P 500 daily change -0.22%; VIX daily change 0.47%, as of 2026-10-07. Risk-on requires equities ≥+0.5% and VIX ≤−5%; risk-off requires equities ≤−0.5% and VIX ≥+5%. Otherwise mixed."
-  },
   "events": [
     {
       "currency": "USD",
@@ -3302,113 +2057,12 @@
       "note": "Country calendar reconsulted at the October 8 morning cutoff for the exact seven-day window. No matching major release listed where none_verified; this is not a guarantee against unscheduled events. Supplemental events do not replace configured scoring series."
     }
   ],
-  "limitations": [
-    "Unavailable evidence: JPY:employment, CHF:core_cpi, CHF:employment. See each source note.",
-    "21 numeric observations lack a comparable sourced consensus; prior values are not used as consensus."
-  ],
-  "researchMode": "subscription-cloud",
-  "validationWarnings": [],
-  "consultedSources": [
-    "https://www.federalreserve.gov/newsevents/speech/jefferson20261001a.htm",
-    "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
-    "https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp261005~1d8d998ef4.en.html",
-    "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260910~314e508016.en.html",
-    "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
-    "https://www.boj.or.jp/en/mopo/mpmsche_minu/opinion_2026/opi260918.pdf",
-    "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260918a.pdf",
-    "https://www.snb.ch/en/publications/communication/press-releases-restricted/pre_20260924",
-    "https://www.rba.gov.au/media-releases/2026/mr-26-27.html",
-    "https://www.rbnz.govt.nz/news-and-events/news/2026/09/ocr-increased-by-25-basis-points-to-2-75",
-    "https://www.bankofcanada.ca/2026/09/fad-press-release-2026-09-02/",
-    "https://www.bls.gov/news.release/cpi.htm",
-    "https://tradingeconomics.com/united-states/inflation-rate-mom",
-    "https://tradingeconomics.com/united-states/core-inflation-rate-mom",
-    "https://www.bls.gov/news.release/archives/empsit_10022026.htm",
-    "https://tradingeconomics.com/united-states/non-farm-payrolls",
-    "https://www.bea.gov/data/gdp/gross-domestic-product",
-    "https://tradingeconomics.com/united-states/gdp-growth",
-    "https://tradingeconomics.com/united-states/composite-pmi",
-    "https://tradingeconomics.com/united-states/calendar",
-    "https://www.census.gov/retail/sales.html",
-    "https://tradingeconomics.com/united-states/retail-sales",
-    "https://ec.europa.eu/eurostat/en/web/products-euro-indicators/w/2-02102026-ap",
-    "https://tradingeconomics.com/euro-area/inflation-cpi",
-    "https://tradingeconomics.com/euro-area/core-inflation-rate",
-    "https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-07092026-ap",
-    "https://ec.europa.eu/eurostat/en/web/products-euro-indicators/w/3-01102026-ap",
-    "https://tradingeconomics.com/euro-area/gdp-growth",
-    "https://tradingeconomics.com/euro-area/composite-pmi",
-    "https://tradingeconomics.com/euro-area/calendar",
-    "https://tradingeconomics.com/euro-area/retail-sales",
-    "https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/august2026",
-    "https://tradingeconomics.com/united-kingdom/inflation-cpi",
-    "https://tradingeconomics.com/united-kingdom/core-inflation-rate",
-    "https://tradingeconomics.com/united-kingdom/employment-change",
-    "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/uklabourmarket/latest",
-    "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/quarterlynationalaccounts/latest",
-    "https://tradingeconomics.com/united-kingdom/gdp-growth",
-    "https://tradingeconomics.com/united-kingdom/composite-pmi",
-    "https://tradingeconomics.com/united-kingdom/calendar",
-    "https://www.ons.gov.uk/businessindustryandtrade/retailindustry/bulletins/retailsales/august2026",
-    "https://tradingeconomics.com/united-kingdom/retail-sales",
-    "https://tradingeconomics.com/japan/inflation-cpi",
-    "https://tradingeconomics.com/japan/core-inflation-rate",
-    "https://tradingeconomics.com/japan/employed-persons",
-    "https://tradingeconomics.com/japan/unemployment-rate",
-    "https://www.esri.cao.go.jp/en/sna/data/sokuhou/files/2026/qe262_2/pdf/gaiyou2622_e.pdf",
-    "https://tradingeconomics.com/japan/gdp-growth",
-    "https://tradingeconomics.com/japan/composite-pmi",
-    "https://tradingeconomics.com/japan/calendar",
-    "https://tradingeconomics.com/japan/retail-sales",
-    "https://tradingeconomics.com/switzerland/inflation-cpi",
-    "https://tradingeconomics.com/switzerland/core-inflation-rate",
-    "https://tradingeconomics.com/switzerland/employment-change",
-    "https://tradingeconomics.com/switzerland/unemployment-rate",
-    "https://www.seco.admin.ch/en/gross-domestic-product",
-    "https://tradingeconomics.com/switzerland/manufacturing-pmi",
-    "https://tradingeconomics.com/switzerland/retail-sales-annual",
-    "https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/consumer-price-index-australia/aug-2026",
-    "https://tradingeconomics.com/australia/inflation-cpi",
-    "https://tradingeconomics.com/australia/core-inflation-rate",
-    "https://www.abs.gov.au/statistics/labour/employment-and-unemployment/labour-force-australia/aug-2026",
-    "https://tradingeconomics.com/australia/employment-change",
-    "https://www.abs.gov.au/media-centre/media-releases/australian-economy-grew-04-june-quarter",
-    "https://tradingeconomics.com/australia/gdp-growth",
-    "https://tradingeconomics.com/australia/composite-pmi",
-    "https://tradingeconomics.com/australia/calendar",
-    "https://www.abs.gov.au/statistics/economy/finance/monthly-household-spending-indicator/aug-2026",
-    "https://tradingeconomics.com/new-zealand/inflation-cpi",
-    "https://www.rbnz.govt.nz/statistics/series/economic-indicators/prices",
-    "https://tradingeconomics.com/new-zealand/employment-change",
-    "https://tradingeconomics.com/new-zealand/unemployment-rate",
-    "https://tradingeconomics.com/new-zealand/gdp-growth",
-    "https://tradingeconomics.com/new-zealand/manufacturing-pmi",
-    "https://tradingeconomics.com/new-zealand/retail-sales",
-    "https://www150.statcan.gc.ca/n1/daily-quotidien/260914/dq260914a-eng.htm",
-    "https://tradingeconomics.com/canada/inflation-cpi",
-    "https://www.bankofcanada.ca/rates/price-indexes/cpi/",
-    "https://www.forexfactory.com/calendar/657-ca-trimmed-cpi-yy",
-    "https://tradingeconomics.com/canada/employment-change",
-    "https://www150.statcan.gc.ca/n1/daily-quotidien/260828/t003a-eng.htm",
-    "https://tradingeconomics.com/canada/gdp-growth",
-    "https://tradingeconomics.com/canada/composite-pmi",
-    "https://tradingeconomics.com/canada/retail-sales",
-    "https://tradingeconomics.com/switzerland/calendar",
-    "https://tradingeconomics.com/new-zealand/calendar",
-    "https://tradingeconomics.com/canada/calendar",
-    "https://www.bankofengland.co.uk/events/upcoming-events",
-    "https://www.federalreserve.gov/newsevents/2026-october.htm",
-    "https://www.rba.gov.au/schedules-events/calendar/",
-    "https://www.investing.com/indices/us-spx-500-historical-data",
-    "https://www.investing.com/indices/volatility-s-p-500-historical-data?cid=1096487",
-    "https://www.investing.com/news/economy-news/bank-of-englands-mann-says-high-inflation-has-become-embedded-in-uk-4933692",
-    "https://www.boj.or.jp/en/about/press/koen_2026/index.htm",
-    "https://www.bankofcanada.ca/2026/10/canadas-housing-affordability-dilemma/",
-    "https://www.boj.or.jp/en/about/press/koen_2026/ko261005a.htm",
-    "https://tradingeconomics.com/canada/unemployment-rate",
-    "https://www.boj.or.jp/en/about/press/koen_2026/data/ko261005a.pdf",
-    "https://www.bankofengland.co.uk/speech/2026/october/catherine-mann-nomura-investor-conference",
-    "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm",
-    "https://www.federalreserve.gov/newsevents/speech/waller20261008a.htm"
-  ]
+  "risk": {
+    "equityChangePct": -0.22,
+    "vixChangePct": 0.47,
+    "asOf": "2026-10-07",
+    "equitySourceUrl": "https://www.investing.com/indices/us-spx-500-historical-data",
+    "vixSourceUrl": "https://www.investing.com/indices/volatility-s-p-500-historical-data?cid=1096487",
+    "notes": "Latest completed daily observation remains October 7 at the afternoon cutoff: S&P 500 -0.22% and VIX +0.47%. The October 8 session was incomplete, so no partial-day risk classification was substituted."
+  }
 }

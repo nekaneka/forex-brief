@@ -1,0 +1,30 @@
+{
+  "id": "2026-10-08-afternoon",
+  "cutoff": "2026-10-08T11:30:36Z",
+  "session": "afternoon",
+  "sourceRevision": "7a2449d893447b8d2aba05fb55629dda6792eb79",
+  "generatedAt": "2026-10-08T11:32:02.289Z",
+  "consultedSourceCount": 101,
+  "httpConsultation": {
+    "successful": 100,
+    "nonSuccessful": 1,
+    "nonSuccessfulUrl": "https://www.seco.admin.ch/en/gross-domestic-product",
+    "status": 500
+  },
+  "coverage": {
+    "verified": 69,
+    "total": 72,
+    "calendarChecks": 48,
+    "events": 17,
+    "warnings": 0
+  },
+  "materialChanges": [
+    "Updated USD central-bank guidance to Governor Waller’s 8 October official speech; strong-hawkish tone unchanged.",
+    "Removed events already past at the afternoon cutoff and retained 17 events in the next seven days.",
+    "Risk remained mixed using the latest completed 7 October S&P 500 and VIX observations."
+  ],
+  "tests": {
+    "npmTest": "19/19 passed",
+    "npmCheck": "passed"
+  }
+}
