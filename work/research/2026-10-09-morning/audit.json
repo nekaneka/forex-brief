@@ -1,0 +1,29 @@
+{
+  "id": "2026-10-09-morning",
+  "cutoff": "2026-10-09T04:32:23Z",
+  "session": "morning",
+  "sourceRevision": "58195b4b4804bfd47d8569eb70c5ec21ef937ec5",
+  "generatedAt": "2026-10-09T04:34:04.132Z",
+  "consultedSourceCount": 107,
+  "httpConsultation": {
+    "successful": 107,
+    "nonSuccessful": 0
+  },
+  "coverage": {
+    "verified": 69,
+    "total": 72,
+    "calendarChecks": 48,
+    "events": 14,
+    "warnings": 0
+  },
+  "materialChanges": [
+    "Updated ECB guidance from the 8 October official meeting account; mixed tone retained because communication was explicitly neutral and data-dependent.",
+    "Recorded supplemental U.S. claims and Japan household-spending releases without substituting them for the configured NFP and METI retail series.",
+    "Updated risk to 8 October completed session: S&P 500 -0.47%, VIX +2.19%; mixed under fixed thresholds."
+  ],
+  "tests": {
+    "npmTest": "19/19 passed",
+    "npmCheck": "passed"
+  },
+  "prevalidationRejection": "Initial envelope rejected SCHEMA_EXTRA research.calendarChecks[0].searchQuery before publication files changed; field removed and schema rerun."
+}
