@@ -1,0 +1,28 @@
+{
+  "id": "2026-10-09-afternoon",
+  "cutoff": "2026-10-09T11:29:48Z",
+  "session": "afternoon",
+  "sourceRevision": "2edf4aba5adfbaf5cf662ce3a232e3f45d5c6083",
+  "generatedAt": "2026-10-09T11:31:49.170Z",
+  "consultedSourceCount": 107,
+  "httpConsultation": {
+    "successful": 107,
+    "nonSuccessful": 0
+  },
+  "coverage": {
+    "verified": 69,
+    "total": 72,
+    "calendarChecks": 48,
+    "events": 13,
+    "warnings": 0
+  },
+  "materialChanges": [
+    "No new configured factor release completed between the morning and afternoon cutoffs.",
+    "Canadian employment and unemployment remained scheduled for 12:30 UTC, after cutoff, and were not assigned invented actuals.",
+    "Risk retained the latest completed October 8 observation; no partial October 9 market data were used."
+  ],
+  "tests": {
+    "npmTest": "19/19 passed",
+    "npmCheck": "passed"
+  }
+}
