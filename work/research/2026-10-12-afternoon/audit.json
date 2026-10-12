@@ -1,0 +1,35 @@
+{
+  "id": "2026-10-12-afternoon",
+  "cutoff": "2026-10-12T11:30:34Z",
+  "session": "afternoon",
+  "evidence": {
+    "verified": 69,
+    "total": 72,
+    "unavailable": [
+      "JPY:employment",
+      "CHF:core_cpi",
+      "CHF:employment"
+    ]
+  },
+  "calendar": {
+    "checked": 48,
+    "scheduled": 12,
+    "events": 14
+  },
+  "sources": {
+    "consulted": 108,
+    "rechecked": 108,
+    "httpExceptions": [
+      {
+        "url": "https://www.forexfactory.com/calendar/657-ca-trimmed-cpi-yy",
+        "status": 403,
+        "note": "Optional consensus page; underlying observation remains supported by allowed Bank of Canada and Trading Economics sources."
+      }
+    ]
+  },
+  "warnings": [],
+  "notes": [
+    "All 108 consulted URLs were requested again from the fresh cloud workspace. A transient first attempt to the Bank of Canada CPI page timed out, then returned HTTP 200 on retry.",
+    "No newer qualifying evidence release or completed risk-market session was available after the morning cutoff."
+  ]
+}
