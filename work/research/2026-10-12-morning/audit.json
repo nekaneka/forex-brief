@@ -1,0 +1,27 @@
+{
+  "id": "2026-10-12-morning",
+  "cutoff": "2026-10-12T04:29:02Z",
+  "session": "morning",
+  "evidence": {
+    "verified": 69,
+    "total": 72,
+    "unavailable": [
+      "JPY:employment",
+      "CHF:core_cpi",
+      "CHF:employment"
+    ]
+  },
+  "calendar": {
+    "checked": 48,
+    "scheduled": 12,
+    "events": 14
+  },
+  "sources": {
+    "consulted": 108
+  },
+  "warnings": [],
+  "notes": [
+    "All carried evidence URLs were reconsulted in the fresh cloud workspace; one optional Forex Factory URL returned HTTP 403 while the underlying CAD core CPI observation remained supported by allowed Bank of Canada and Trading Economics sources.",
+    "Canada September labour data and October 9 risk-market closes were refreshed after the prior cutoff."
+  ]
+}
