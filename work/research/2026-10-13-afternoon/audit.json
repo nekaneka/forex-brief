@@ -1,0 +1,30 @@
+{
+  "id": "2026-10-13-afternoon",
+  "cutoff": "2026-10-13T11:32:42Z",
+  "session": "afternoon",
+  "evidence": {
+    "verified": 69,
+    "total": 72,
+    "unavailable": [
+      "JPY:employment",
+      "CHF:core_cpi",
+      "CHF:employment"
+    ]
+  },
+  "calendar": {
+    "checked": 48,
+    "scheduled": 9,
+    "events": 13
+  },
+  "sources": {
+    "consulted": 113,
+    "rechecked": 109,
+    "httpExceptions": []
+  },
+  "warnings": [],
+  "notes": [
+    "All prior evidence and calendar sources were reconsulted from the fresh cloud workspace. Four fresh public pages covering the October 13 BoE communication and intraday market context were also read.",
+    "Megan Greene delivered a hawkish individual view after the morning cutoff, but no allowlisted underlying BoE speech release was available. The validated factor therefore retains the latest allowlisted verified communication rather than fabricating provenance or changing the score.",
+    "No newer completed U.S. risk session was available; intraday futures were not substituted for the model input."
+  ]
+}
