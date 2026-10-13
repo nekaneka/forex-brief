@@ -1,0 +1,45 @@
+{
+  "id": "2026-10-13-morning",
+  "cutoff": "2026-10-13T04:26:47Z",
+  "session": "morning",
+  "evidence": {
+    "verified": 69,
+    "total": 72,
+    "unavailable": [
+      "JPY:employment",
+      "CHF:core_cpi",
+      "CHF:employment"
+    ]
+  },
+  "calendar": {
+    "checked": 48,
+    "scheduled": 9,
+    "events": 13
+  },
+  "sources": {
+    "consulted": 109,
+    "rechecked": 109,
+    "httpExceptions": [
+      {
+        "url": "https://www.forexfactory.com/calendar/657-ca-trimmed-cpi-yy",
+        "status": 403,
+        "note": "Optional consensus page; underlying observation remains supported by allowed Bank of Canada and Trading Economics sources."
+      },
+      {
+        "url": "https://www.bls.gov/news.release/archives/empsit_10022026.htm",
+        "status": 0,
+        "note": "The fresh shell recheck did not receive an HTTP response; the already-consulted official BLS release remains recorded and the figure was not changed."
+      },
+      {
+        "url": "https://www.investing.com/indices/us-spx-500-historical-data?cid=40826",
+        "status": 503,
+        "note": "The historical page returned HTTP 503 to the shell recheck; the October 12 close was independently verified through the fresh public-news source consultation."
+      }
+    ]
+  },
+  "warnings": [],
+  "notes": [
+    "The prior 108-source evidence set was reconsulted from the fresh cloud workspace; the official October 13 RBA minutes were added as source 109.",
+    "The completed October 12 S&P 500 and VIX session produced a deterministic mixed risk classification."
+  ]
+}
