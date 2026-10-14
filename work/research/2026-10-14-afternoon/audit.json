@@ -1,0 +1,37 @@
+{
+  "id": "2026-10-14-afternoon",
+  "cutoff": "2026-10-14T11:30:40Z",
+  "session": "afternoon",
+  "evidence": {
+    "verified": 69,
+    "total": 72,
+    "unavailable": [
+      "JPY:employment",
+      "CHF:core_cpi",
+      "CHF:employment"
+    ]
+  },
+  "calendar": {
+    "checked": 48,
+    "scheduled": 9,
+    "events": 12
+  },
+  "sources": {
+    "consulted": 119,
+    "rechecked": 119,
+    "httpExceptions": [
+      {
+        "url": "https://www.reuters.com/world/uk/bank-englands-pill-says-hes-sceptical-about-market-pricing-four-rate-hikes-2026-10-14/",
+        "status": 401,
+        "note": "Context-only Reuters account of Huw Pill remarks; not allowed or used as validated scoring provenance because no official BoE transcript was published before cutoff."
+      }
+    ]
+  },
+  "warnings": [],
+  "notes": [
+    "All 72 factor rows and all 48 calendar categories were reconsulted in a fresh cloud checkout for the afternoon cutoff.",
+    "No newer configured macro release landed between the morning and afternoon cutoffs. Huw Pill remarks were context only because the BoE had not published an official transcript; the validated GBP policy observation was not changed.",
+    "The September US CPI release remained scheduled for 12:30 UTC, after the 11:30:40 UTC cutoff; no premature actual was recorded.",
+    "Risk retained the latest completed October 13 S&P 500 and VIX session and remained deterministically mixed."
+  ]
+}
