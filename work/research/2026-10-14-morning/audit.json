@@ -1,0 +1,38 @@
+{
+  "id": "2026-10-14-morning",
+  "cutoff": "2026-10-14T04:34:29Z",
+  "session": "morning",
+  "evidence": {
+    "verified": 69,
+    "total": 72,
+    "unavailable": [
+      "JPY:employment",
+      "CHF:core_cpi",
+      "CHF:employment"
+    ]
+  },
+  "calendar": {
+    "checked": 48,
+    "scheduled": 9,
+    "events": 13
+  },
+  "sources": {
+    "consulted": 118,
+    "rechecked": 113,
+    "httpExceptions": [
+      {"url":"https://www.rba.gov.au/media-releases/2026/mr-26-27.html","status":0,"note":"No HTTP response in the bulk shell recheck; the newer official RBA minutes remain available and are the scored communication."},
+      {"url":"https://www.bls.gov/news.release/cpi.htm","status":0,"note":"No HTTP response in the bulk shell recheck; no new CPI release was due before the cutoff and the existing observation was not changed."},
+      {"url":"https://www.bls.gov/news.release/archives/empsit_10022026.htm","status":0,"note":"No HTTP response in the bulk shell recheck; the already-consulted official release remains recorded and unchanged."},
+      {"url":"https://ec.europa.eu/eurostat/en/web/products-euro-indicators/w/2-02102026-ap","status":0,"note":"No HTTP response in the bulk shell recheck; the recorded Eurostat observation was not changed."},
+      {"url":"https://www.reuters.com/world/uk/imf-sees-higher-energy-prices-interest-rates-hitting-uk-growth-2026-10-13/","status":401,"note":"Context-only Reuters page returned HTTP 401 to curl; it is not cited as validated scoring provenance."},
+      {"url":"https://www.reuters.com/business/sp-500-futures-muted-investors-await-big-bank-earnings-chip-weakness-weighs-2026-10-13/","status":401,"note":"Context-only Reuters page returned HTTP 401 to curl; risk figures were verified on allowed Investing and Cboe pages."},
+      {"url":"https://www.reuters.com/world/uk/sterling-holds-near-16-month-high-vs-euro-budget-boe-focus-2026-10-13/","status":401,"note":"Context-only Reuters page returned HTTP 401 to curl; it is not cited as validated scoring provenance."}
+    ]
+  },
+  "warnings": [],
+  "notes": [
+    "All prior evidence and calendar sources were reconsulted from the fresh cloud workspace. Fresh official and allowed public pages were added for the completed October 13 risk session and October 14 calendar.",
+    "No newer configured scoring release was available before the cutoff. Australian MI leading index and Japanese money supply are supplemental and were not substituted for configured factors.",
+    "The completed October 13 S&P 500 and VIX session produced a deterministic mixed risk classification."
+  ]
+}
